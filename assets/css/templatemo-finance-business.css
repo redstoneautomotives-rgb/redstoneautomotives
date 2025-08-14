@@ -1362,7 +1362,7 @@ footer .contact-form ::placeholder {
 	.navbar .navbar-nav .nav-link.current,
 	.navbar .navbar-nav .nav-link.show,
 	.navbar .navbar-nav .show > .nav-link {
-		color: #B22222!important;
+		color: #ffff!important;
 		border-bottom: none !important;
 	}
 }
