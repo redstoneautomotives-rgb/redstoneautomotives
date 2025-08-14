@@ -1,0 +1,2558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Updated title for automotive business -->
+    <title>Redstone Automotives - Professional Auto Services</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <!-- Updated styles with brick red theme, removed intro video, added background video, animations, and sitemap -->
+    <style>
+        :root {
+            --primary-color: #B22222;
+            --primary-dark: #8B1A1A;
+            --primary-light: #CD5C5C;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+            --transition-speed: 0.4s;
+            --transition-easing: cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Override ALL green colors with brick red */
+        .filled-button, .main-banner .filled-button {
+            background-color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color) !important;
+            transition: all var(--transition-speed) var(--transition-easing);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+            .filled-button::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: var(--primary-dark);
+                transition: all var(--transition-speed) var(--transition-easing);
+                z-index: -1;
+            }
+
+            .filled-button:hover {
+                background-color: var(--primary-dark) !important;
+                border: 2px solid var(--primary-dark) !important;
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(178, 34, 34, 0.3);
+            }
+
+                .filled-button:hover::before {
+                    left: 0;
+                }
+
+        .section-heading h2 em {
+            color: var(--primary-color) !important;
+            position: relative;
+            display: inline-block;
+        }
+
+            .section-heading h2 em::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background: var(--primary-color);
+                transition: width var(--transition-speed) var(--transition-easing);
+            }
+
+        .section-heading:hover h2 em::after {
+            width: 100%;
+        }
+
+        .navbar-brand h2 {
+            color: var(--primary-color) !important;
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+        .nav-link.current, .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f5f5f5 !important;
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+        }
+
+            .navbar-nav .nav-link::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: var(--primary-color);
+                transition: width var(--transition-speed) var(--transition-easing);
+            }
+
+            .navbar-nav .nav-link:hover {
+                color: #dc3545 !important;
+                font-weight: bold !important;
+                transform: scale(1.05);
+            }
+
+                .navbar-nav .nav-link:hover::after {
+                    width: 100%;
+                }
+
+        .count-digit {
+            color: var(--primary-color) !important;
+        }
+
+        .service-item .filled-button {
+            background-color: var(--primary-color) !important;
+        }
+
+        /* Additional brick red overrides */
+        .more-info .filled-button, .testimonials .filled-button,
+        .partners .filled-button, footer .filled-button {
+            background-color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color) !important;
+        }
+
+            .more-info .filled-button:hover, .testimonials .filled-button:hover,
+            .partners .filled-button:hover, footer .filled-button:hover {
+                background-color: var(--primary-dark) !important;
+                border: 2px solid var(--primary-dark) !important;
+            }
+
+        /* Override any remaining green elements */
+        .main-banner .item .text-content .filled-button,
+        .services .service-item .filled-button,
+        .fun-facts .filled-button,
+        .more-info .right-content .filled-button {
+            background-color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color) !important;
+        }
+
+        /* Updated header background to brick red */
+        .sub-header {
+            background-color: var(--primary-color) !important;
+            color: white;
+        }
+
+            .sub-header a {
+                color: white !important;
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+                .sub-header a:hover {
+                    color: #f0f0f0 !important;
+                    transform: translateY(-2px);
+                }
+
+        /* Added background video styles for home section */
+        .main-banner {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            transition: transform 5s var(--transition-easing);
+        }
+
+        .main-banner:hover .background-video {
+            transform: scale(1.05);
+        }
+
+        .main-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            transition: background var(--transition-speed) var(--transition-easing);
+        }
+
+        .main-banner:hover::before {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .main-banner .Modern-Slider {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Modern service hover effects */
+        .service-item {
+            transition: all var(--transition-speed) var(--transition-easing);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            background: white;
+        }
+
+        /* Enhanced service hover effects with dynamic red animations */
+        .service-item {
+            transition: all var(--transition-speed) var(--transition-easing);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            background: white;
+        }
+
+            /* Red-themed hover effect */
+            .service-item:hover {
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: 0 20px 40px rgba(220, 53, 69, 0.25), 0 0 20px rgba(220, 53, 69, 0.15);
+                animation: redGlow 2s ease-in-out infinite alternate;
+            }
+
+        @keyframes redGlow {
+            0% {
+                box-shadow: 0 20px 40px rgba(220, 53, 69, 0.25), 0 0 20px rgba(220, 53, 69, 0.15);
+            }
+
+            100% {
+                box-shadow: 0 25px 50px rgba(220, 53, 69, 0.35), 0 0 30px rgba(220, 53, 69, 0.25);
+            }
+        }
+
+        /* Added subtle gradient border animation */
+        .service-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark), var(--primary-color));
+            background-size: 300% 300%;
+            opacity: 0;
+            transition: opacity var(--transition-speed) var(--transition-easing);
+            z-index: -1;
+            padding: 2px;
+        }
+
+        .service-item:hover::before {
+            opacity: 1;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Enhanced image and content animations */
+        .service-item img {
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+        .service-item:hover img {
+            transform: scale(1.1) rotate(2deg);
+            filter: brightness(1.1) contrast(1.1);
+        }
+
+        .service-item .service-content {
+            transition: all var(--transition-speed) var(--transition-easing);
+            position: relative;
+        }
+
+        .service-item:hover .service-content {
+            transform: translateY(-5px);
+        }
+
+        .service-item:hover h4 {
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(220, 53, 69, 0.3);
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px rgba(220, 53, 69, 0.3);
+            }
+
+            100% {
+                text-shadow: 0 0 15px rgba(220, 53, 69, 0.5);
+            }
+        }
+
+        .service-item:hover p {
+            color: #1e40af;
+            transform: translateY(-2px);
+        }
+
+        @keyframes redPulse {
+            0%, 100% {
+                box-shadow: 0 25px 50px rgba(220, 20, 60, 0.3), 0 0 30px rgba(220, 20, 60, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 25px 50px rgba(220, 20, 60, 0.4), 0 0 40px rgba(220, 20, 60, 0.3);
+            }
+        }
+
+        /* Added red border animation */
+        .service-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 3px solid transparent;
+            border-radius: 10px;
+            background: linear-gradient(45deg, transparent, var(--primary-color), transparent) border-box;
+            mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity var(--transition-speed) var(--transition-easing);
+            z-index: 1;
+        }
+
+        .service-item:hover::before {
+            opacity: 1;
+            animation: borderRotate 3s linear infinite;
+        }
+
+        @keyframes borderRotate {
+            0% {
+                background: linear-gradient(0deg, transparent, var(--primary-color), transparent) border-box;
+            }
+
+            25% {
+                background: linear-gradient(90deg, transparent, var(--primary-color), transparent) border-box;
+            }
+
+            50% {
+                background: linear-gradient(180deg, transparent, var(--primary-color), transparent) border-box;
+            }
+
+            75% {
+                background: linear-gradient(270deg, transparent, var(--primary-color), transparent) border-box;
+            }
+
+            100% {
+                background: linear-gradient(360deg, transparent, var(--primary-color), transparent) border-box;
+            }
+        }
+
+        .service-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: all var(--transition-speed) var(--transition-easing);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Enhanced image effects with red overlay and rotation */
+        .service-item:hover img {
+            transform: scale(1.1) rotate(2deg);
+            filter: brightness(1.1) contrast(1.1);
+        }
+
+        /* Removed red overlay tint from service items */
+        .service-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: transparent;
+            opacity: 0;
+            transition: opacity var(--transition-speed) var(--transition-easing);
+            z-index: 3;
+        }
+
+        .service-item:hover::after {
+            opacity: 0;
+        }
+
+        .service-item .down-content {
+            padding: 20px;
+            position: relative;
+            z-index: 4;
+            background: white;
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+        /* Enhanced content animation with bounce effect */
+        .service-item:hover .down-content {
+            transform: translateY(-8px);
+            animation: contentBounce 0.6s ease-out;
+        }
+
+        @keyframes contentBounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-12px);
+            }
+
+            50% {
+                transform: translateY(-6px);
+            }
+
+            70% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .service-item .down-content h4 {
+            color: var(--text-color);
+            position: relative;
+            padding-bottom: 10px;
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+            /* Added animated red underline with expanding effect */
+            .service-item .down-content h4::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: 3px;
+                background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+                transition: all var(--transition-speed) var(--transition-easing);
+                transform: translateX(-50%);
+            }
+
+        .service-item:hover .down-content h4 {
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(220, 20, 60, 0.3);
+            animation: textGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes textGlow {
+            from {
+                text-shadow: 0 0 10px rgba(220, 20, 60, 0.3);
+            }
+
+            to {
+                text-shadow: 0 0 20px rgba(220, 20, 60, 0.5), 0 0 30px rgba(220, 20, 60, 0.3);
+            }
+        }
+
+        .service-item:hover .down-content h4::after {
+            width: 80px;
+            animation: underlineShimmer 1.5s ease-in-out infinite;
+        }
+
+        @keyframes underlineShimmer {
+            0%, 100% {
+                background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            }
+
+            50% {
+                background: linear-gradient(90deg, var(--primary-color), #ff6b6b, var(--primary-color));
+            }
+        }
+
+        .service-item .down-content p {
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+        /* Enhanced text animation with typewriter effect */
+        .service-item:hover .down-content p {
+            color: #555;
+            animation: textSlideIn 0.8s ease-out;
+        }
+
+        @keyframes textSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Added animation for count digits */
+        .count-area-content {
+            background: linear-gradient(145deg, #1a1a1a, #2d1b1b);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(220, 53, 69, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            margin: 1 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .count-area-content::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(220, 53, 69, 0.1), transparent);
+                transition: left 0.6s ease;
+            }
+
+            .count-area-content:hover::before {
+                left: 100%;
+            }
+
+            .count-area-content:hover {
+                transform: translateY(-10px) scale(1.02);
+                box-shadow: 0 20px 50px rgba(178, 34, 34, 0.3);
+                border-color: rgba(178, 34, 34, 0.6);
+            }
+
+        .count-digit {
+            font-size: 48px;
+            font-weight: 900;
+            color: #dc3545;
+            text-shadow: 0 0 20px rgba(178, 34, 34, 0.5);
+            margin-bottom: 10px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .count-area-content:hover .count-digit {
+            text-shadow: 0 0 30px rgba(178, 34, 34, 0.8);
+            transform: scale(1.1);
+        }
+
+        .count-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: #e0e0e0;
+            margin-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .count-area-content:hover .count-text {
+            color: #ffffff;
+        }
+
+        .count-year {
+            font-size: 14px;
+            color: rgba(224, 224, 224, 0.8);
+            transition: color 0.3s ease;
+        }
+
+        .count-area-content:hover .count-year {
+            color: rgba(220, 53, 69, 0.9);
+        }
+
+        /* Added styles for Why Redstone section */
+        .why-redstone {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            transition: all var(--transition-speed) var(--transition-easing);
+            display: inline-block;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+            transition: all var(--transition-speed) var(--transition-easing);
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+            .feature-item::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 0;
+                background: var(--primary-color);
+                transition: height var(--transition-speed) var(--transition-easing);
+            }
+
+            .feature-item:hover {
+                background: #f8f9fa;
+                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 15px 30px rgba(178, 34, 34, 0.1);
+            }
+
+                .feature-item:hover::before {
+                    height: 100%;
+                }
+
+                .feature-item:hover .feature-icon {
+                    transform: scale(1.1) rotate(5deg);
+                    color: var(--primary-dark);
+                }
+
+            .feature-item h4 {
+                color: var(--primary-color);
+                margin-bottom: 15px;
+                transition: all var(--transition-speed) var(--transition-easing);
+                position: relative;
+            }
+
+            .feature-item:hover h4 {
+                letter-spacing: 0.5px;
+            }
+
+        /* Added styles for mission and vision section */
+        .mission-vision {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+            .mission-vision .row > div {
+                margin-bottom: 30px;
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+                .mission-vision .row > div:hover {
+                    transform: translateY(-5px);
+                }
+
+            .mission-vision h4 {
+                color: var(--primary-color);
+                margin-bottom: 15px;
+                position: relative;
+                display: inline-block;
+            }
+
+                .mission-vision h4::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: var(--primary-color);
+                    transition: width var(--transition-speed) var(--transition-easing);
+                }
+
+            .mission-vision .row > div:hover h4::after {
+                width: 100%;
+            }
+
+        /* WhatsApp Widget Styles */
+        .whatsapp-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #25D366;
+            border-radius: 50px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all var(--transition-speed) var(--transition-easing);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: 500;
+        }
+
+            .whatsapp-widget:hover {
+                background-color: #128C7E;
+                transform: scale(1.05) rotate(5deg);
+                text-decoration: none;
+                color: white;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            }
+
+        .whatsapp-icon {
+            font-size: 24px;
+            transition: transform var(--transition-speed) var(--transition-easing);
+        }
+
+        .whatsapp-widget:hover .whatsapp-icon {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-widget {
+                padding: 12px;
+                border-radius: 50%;
+            }
+
+            .whatsapp-text {
+                display: none;
+            }
+        }
+
+        /* Added sitemap styles */
+        .sitemap-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            transition: all var(--transition-speed) var(--transition-easing);
+            position: relative;
+            overflow: hidden;
+        }
+
+            .sitemap-item::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: var(--primary-color);
+                transition: left var(--transition-speed) var(--transition-easing);
+                z-index: 0;
+            }
+
+            .sitemap-item:hover {
+                background: var(--primary-color);
+                color: white;
+                transform: translateX(5px);
+            }
+
+                .sitemap-item:hover::before {
+                    left: 0;
+                }
+
+            .sitemap-item a {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                position: relative;
+                z-index: 1;
+            }
+
+            .sitemap-item:hover a {
+                color: white;
+            }
+
+        /* Added general animations */
+        .section-heading {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced smooth scrolling with delay */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add transition delay for smoother experience */
+        @media (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
+
+            [id] {
+                scroll-margin-top: 100px;
+                transition: scroll-margin-top var(--transition-speed) var(--transition-easing);
+            }
+        }
+
+        /* Added Our Values section styles */
+        .our-values {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/placeholder.svg?height=600&width=1200') center/cover;
+            padding: 100px 0;
+            color: white;
+        }
+
+            .our-values .section-heading h2,
+            .our-values .section-heading span {
+                color: white;
+            }
+
+                .our-values .section-heading h2 em {
+                    color: var(--primary-color) !important;
+                }
+
+        .value-item {
+            text-align: center;
+            padding: 30px 15px;
+            transition: all var(--transition-speed) var(--transition-easing);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+            .value-item:hover {
+                background: rgba(255,255,255,0.1);
+                transform: translateY(-10px) scale(1.03);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                border-color: var(--primary-color);
+            }
+
+            .value-item i {
+                transition: all var(--transition-speed) var(--transition-easing);
+                display: inline-block;
+            }
+
+            .value-item:hover i {
+                transform: scale(1.2) rotate(5deg);
+                color: var(--primary-light) !important;
+                text-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+            }
+
+            .value-item h5 {
+                color: white;
+                margin: 15px 0 10px 0;
+                font-weight: 600;
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+            .value-item:hover h5 {
+                letter-spacing: 1px;
+            }
+
+            .value-item p {
+                color: #ccc;
+                font-size: 14px;
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+            .value-item:hover p {
+                color: white;
+            }
+
+        /* Added standalone map section styles */
+        .map-container {
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+            .map-container:hover {
+                transform: translateY(-5px) scale(1.02);
+                background: var(--primary-color) !important;
+                box-shadow: 0 10px 20px rgba(178, 34, 34, 0.3);
+            }
+
+                .map-container:hover i,
+                .map-container:hover h5,
+                .map-container:hover p {
+                    color: white !important;
+                }
+
+        /* Added CSS for running brand logos animation */
+        .logos-slider {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .logos-track {
+            display: inline-flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        .logo-item {
+            flex: 0 0 auto;
+            margin: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+            .logo-item:hover {
+                transform: scale(1.1);
+            }
+
+            .logo-item img {
+                height: 80px;
+                width: auto;
+                max-width: 120px;
+                object-fit: contain;
+                filter: grayscale(100%);
+                opacity: 0.7;
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+            .logo-item:hover img {
+                filter: grayscale(0%);
+                opacity: 1;
+                transform: scale(1.1);
+            }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .logos-slider:hover .logos-track {
+            animation-play-state: paused;
+        }
+
+        /* Modern social icon hover effects */
+        .social-icons li a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            transition: all var(--transition-speed) var(--transition-easing);
+            position: relative;
+            overflow: hidden;
+        }
+
+            .social-icons li a::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--primary-color);
+                z-index: -1;
+                transform: scale(0);
+                transition: transform var(--transition-speed) var(--transition-easing);
+                border-radius: 50%;
+            }
+
+            .social-icons li a:hover {
+                color: white;
+                transform: translateY(-3px);
+            }
+
+                .social-icons li a:hover::before {
+                    transform: scale(1);
+                }
+
+        /* Modern footer hover effects */
+        .footer-item h4 {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+            .footer-item h4::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 50px;
+                height: 2px;
+                background: var(--primary-color);
+                transition: width var(--transition-speed) var(--transition-easing);
+            }
+
+        .footer-item:hover h4::after {
+            width: 100px;
+        }
+
+        .menu-list li a {
+            position: relative;
+            padding-left: 0;
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+            .menu-list li a::before {
+                content: '→';
+                position: absolute;
+                left: -15px;
+                opacity: 0;
+                color: var(--primary-color);
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+            .menu-list li a:hover {
+                padding-left: 15px;
+                color: var(--primary-color);
+            }
+
+                .menu-list li a:hover::before {
+                    opacity: 1;
+                    left: 0;
+                }
+
+        /* Modern location card hover effect */
+        .location-card {
+            transition: all var(--transition-speed) var(--transition-easing);
+            transform-style: preserve-3d;
+        }
+
+            .location-card:hover {
+                transform: translateY(-5px) rotateX(5deg);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+                border-color: var(--primary-color) !important;
+            }
+
+            .location-card i {
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+            .location-card:hover i {
+                transform: scale(1.2);
+                color: white !important;
+            }
+
+            .location-card div {
+                transition: all var(--transition-speed) var(--transition-easing);
+            }
+
+            .location-card:hover div {
+                background: white !important;
+            }
+
+                .location-card:hover div span {
+                    color: var(--primary-color) !important;
+                }
+
+        /* Modern sub-footer hover effect */
+        .sub-footer p {
+            transition: all var(--transition-speed) var(--transition-easing);
+        }
+
+            .sub-footer p:hover {
+                letter-spacing: 0.5px;
+            }
+
+            .sub-footer p a {
+                transition: all var(--transition-speed) var(--transition-easing);
+                position: relative;
+            }
+
+                .sub-footer p a::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background: white;
+                    transition: width var(--transition-speed) var(--transition-easing);
+                }
+
+                .sub-footer p a:hover {
+                    color: white;
+                }
+
+                    .sub-footer p a:hover::after {
+                        width: 100%;
+                    }
+
+        /* Added styles for new sliders */
+        .custom-slider {
+            background: #f8f9fa;
+            padding: 60px 0;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slider-item {
+            min-width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .service-card, .testimonial-card, .offer-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        /* Simple hover effect */
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(178, 34, 34, 0.15);
+        }
+
+        /* Removed all gradient border animations and complex effects */
+        .service-item::before {
+            display: none;
+        }
+
+        .service-item:hover .service-image img {
+            transform: scale(1.05);
+        }
+
+        .service-item:hover .service-content {
+            transform: translateY(-2px);
+        }
+
+        /* Centered card titles and simplified text effects */
+        .service-item .down-content h4 {
+            color: var(--text-color);
+            text-align: center;
+            padding-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover .down-content h4 {
+            color: var(--primary-color);
+        }
+
+        /* Removed all complex animations and underline effects */
+        .service-item .down-content h4::after {
+            display: none;
+        }
+
+        .service-item:hover p {
+            color: #666;
+        }
+
+        /* Center align service card titles */
+        .service-card h4 {
+            text-align: center;
+        }
+
+        .slider-nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .slider-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .slider-btn:hover {
+                background: #c41e3a;
+                transform: scale(1.05);
+            }
+
+        .slider-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .dot.active, .dot:hover {
+                background-color: var(--primary-color);
+            }
+
+        /* Contact info styles */
+        .contact-info {
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+            padding: 50px 0;
+            color: white;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+            .contact-card:hover {
+                background: rgba(255,255,255,0.15);
+                transform: translateY(-5px);
+            }
+
+        .contact-icon {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* Added modern circular counter styles */
+        .modern-counter-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            position: relative;
+            max-width: 300px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Added background image with blur effect for counter section */
+        .counter-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 50%, #000000 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .counter-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: radial-gradient(circle at 30% 50%, rgba(220, 53, 69, 0.1) 0%, transparent 50%);
+                z-index: 1;
+            }
+
+            .counter-section .container {
+                position: relative;
+                z-index: 2;
+            }
+
+        /* Added left side image content styling */
+        .counter-image-content {
+            background: linear-gradient(145deg, #2d1b1b, #1a1a1a);
+            border-radius: 20px;
+            padding: 40px;
+            height: 100%;
+            border: 2px solid rgba(220, 53, 69, 0.3);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .counter-image-content::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(220, 53, 69, 0.1), transparent);
+                transition: left 0.6s ease;
+            }
+
+            .counter-image-content:hover::before {
+                left: 100%;
+            }
+
+            .counter-image-content:hover {
+                transform: translateY(-5px);
+                border-color: rgba(220, 53, 69, 0.6);
+                box-shadow: 0 15px 40px rgba(178, 34, 34, 0.2);
+            }
+
+            .counter-image-content img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 15px;
+                margin-bottom: 20px;
+                border: 1px solid rgba(220, 53, 69, 0.2);
+            }
+
+            .counter-image-content h3 {
+                color: #dc3545;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .counter-image-content p {
+                color: #e0e0e0;
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 0;
+            }
+
+        .circular-progress {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .progress-ring {
+            transform: rotate(-90deg);
+        }
+
+        .progress-ring-fill {
+            transition: stroke-dashoffset 2s ease-in-out;
+        }
+
+        .counter-content {
+            position: absolute;
+            text-align: center;
+        }
+
+        .count-digit {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .count-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .count-year {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Added simple contact section styles */
+        .simple-contact-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .simple-contact-form {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+            .contact-item:last-child {
+                border-bottom: none;
+            }
+
+            .contact-item i {
+                font-size: 24px;
+                color: var(--primary-color);
+                margin-right: 20px;
+                width: 30px;
+                text-align: center;
+            }
+
+        .contact-details strong {
+            display: block;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .contact-details span {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Added responsive styles for modern counter */
+        @media (max-width: 768px) {
+            .modern-counter-card {
+                padding: 30px;
+                max-width: 250px;
+            }
+
+            .progress-ring {
+                width: 150px;
+                height: 150px;
+            }
+
+            .count-digit {
+                font-size: 2.2rem;
+            }
+
+            .count-label {
+                font-size: 1rem;
+            }
+
+            .simple-contact-form {
+                padding: 30px 20px;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px 0;
+            }
+
+                .contact-item i {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+        }
+
+        /* Additional styling for service images */
+        .service-item .service-image {
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+            /* Added overlay effect on hover */
+            .service-item .service-image::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(220, 53, 69, 0.1), rgba(178, 34, 34, 0.1));
+                opacity: 0;
+                transition: opacity var(--transition-speed) var(--transition-easing);
+                z-index: 1;
+            }
+
+        .service-item:hover .service-image::before {
+            opacity: 1;
+        }
+
+        .service-item .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-speed) var(--transition-easing);
+        }
+
+        /* Added subtle image zoom on hover */
+        .service-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Added responsive styles for company logo */
+        .navbar-brand img {
+            height: auto;
+            max-width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        /* Tablet styles */
+        @media (max-width: 768px) {
+            .navbar-brand img {
+                max-height: 35px;
+                max-width: 140px;
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 30px;
+                max-width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- Updated header background to brick red -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <ul class="left-info">
+                        <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Sat 09:00-19:00</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i>+91 9600010694</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="right-icons">
+                        <li><a href="https://www.facebook.com/profile.php?id=61579105573236"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://wa.me/919600010694"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/redstoneautomotivesllp/?viewAsMember=true"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/redstone_automotives_llp?igsh=YzljYTk1ODg3Zg=="><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Changed company name to logo -->
+                <a class="navbar-brand" href="Index.html">
+                    <img src="assets/images/ra.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link current" href="#top">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#values">Our Values</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Get in Touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner with background video -->
+    <div class="main-banner header-text" id="top">
+        <!--<video autoplay muted loop class="background-video">
+            <source src="/placeholder.mp4?query=professional automotive workshop with mechanics servicing cars and modern equipment" type="video/mp4">
+        </video>-->
+        <div class="Modern-Slider">
+            <!--<div class="item item-1">
+        <div class="img-fill">
+            <div class="text-content">-->
+            <!-- Updated banner content for automotive services -->
+            <!--<h6>we are ready to help you</h6>
+                <h4>Professional Auto<br>&amp; Repair Services</h4>
+                <p>Your trusted automotive partner providing comprehensive car care services. From routine maintenance to complex repairs, we keep your vehicle running smoothly and safely on the road.</p>
+                <a href="#services" class="filled-button">our services</a>
+            </div>
+        </div>
+    </div>-->
+            <div class="item item-1">
+                <div class="img-fill">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/images/redstonevideoo.mp4" type="video/mp4">
+                    </video>
+                    <!--<div class="text-content">
+                <h6>we are ready to help you</h6>
+                <h4>Financial Analysis<br>&amp; Consulting</h4>
+                <p>This finance HTML template is 100% free of charge provided by TemplateMo. This is one-page version added in 2021 February. <a href="index.html">Multiple-page version</a> with different HTML pages are also available.</p>
+                <a href="contact.html" class="filled-button">contact us</a>
+            </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+    <!-- Added Services Slider after banner -->
+    <!--<div class="custom-slider" id="services-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center">
+                        <h2>Our <em>Services</em></h2>
+                        <span>Professional automotive solutions for every need</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider-track" id="servicesTrack">
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="service-card">
+                                    <i class="fa fa-wrench" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                    <h4>Engine Repair</h4>
+                                    <p>Complete engine diagnostics and repair services with state-of-the-art equipment.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-card">
+                                    <i class="fa fa-car" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                    <h4>Brake Service</h4>
+                                    <p>Professional brake inspection, repair, and replacement for your safety.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-card">
+                                    <i class="fa fa-cog" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                    <h4>Transmission</h4>
+                                    <p>Expert transmission repair and maintenance services for smooth driving.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="service-card">
+                                    <i class="fa fa-battery-full" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                    <h4>Battery Service</h4>
+                                    <p>Battery testing, replacement, and electrical system diagnostics.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-card">
+                                    <i class="fa fa-oil-can" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                    <h4>Oil Change</h4>
+                                    <p>Quick and professional oil change services with premium lubricants.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-card">
+                                    <i class="fa fa-shield" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                    <h4>AC Service</h4>
+                                    <p>Complete air conditioning repair and maintenance for comfort driving.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-btn" onclick="changeSlide('services', -1)">❮ Previous</button>
+                    <button class="slider-btn" onclick="changeSlide('services', 1)">Next ❯</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide('services', 1)"></span>
+                    <span class="dot" onclick="currentSlide('services', 2)"></span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <!-- Updated section heading for automotive services -->
+                        <h2>Our <em>Services</em></h2>
+                        <span>Comprehensive automotive solutions for all your vehicle needs</span>
+                    </div>
+                </div>
+                <!-- Updated services with equal height cards and transition effects -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/jktyre.png" alt="JK tyre">
+                        </div>
+                        <div class="down-content">
+                            <h4>Retread Plant-JK Tyres</h4>
+                            <p>
+                                Our state-of-the-art retread plants feature two chambers that effectively meet market demands and ensure timely
+                                delivery to our valued customers. We are associated with, the leading enterprise JK Tyre & Industries Ltd a
+                                prominent tire manufacturer in India and ranks among the top 25 global manufacturers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/maan.jpg" alt="MAN Spares">
+                        </div>
+                        <div class="down-content">
+                            <h4>Spare Parts-MAN Spares</h4>
+                            <p>
+                                Our 13-acre Poonamallee workshop specializes in servicing MAN vehicle parts, backed by over ₹3 Crores in spare parts inventory.
+                                We offer a complete range of line items and engine components to meet diverse needs.
+                                Our OEM-trained technicians expertly handle the latest CRDI technology with precision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/exidee.png" alt="EXIDE Batteries">
+                        </div>
+                        <div class="down-content">
+                            <h4>Batteries-EXIDE</h4>
+                            <p>
+                                Redstone is a leading supplier of EXIDE batteries, one of India's most trusted brands for over six decades.
+                                EXIDE's reputation is built on innovation, nationwide presence, and strong client partnerships.
+                                Global joint ventures drive continuous technological advancement and product excellence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/mpover.png" alt="MPover Tyre Powder">
+                        </div>
+                        <div class="down-content">
+                            <h4>Tyre Powder-MPover</h4>
+                            <p>
+                                MPover Cooling Powder, specially formulated for tire cooling, contains silica, magnesium, aluminum, potassium
+                                oxide, and ferric. It reduces heat resistance, extends tire life by up to 10%, prevents heat punctures, and stops tire
+                                and tube sticking. It also prevents tube tearing, flap cracking, and is 100% asbestos-free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/air.png" alt="TVS Girling AIR">
+                        </div>
+                        <div class="down-content">
+                            <h4>TVS Girling AIR- Brakes India</h4>
+                            <p>
+                                We are authorised service centre for TVS Girling which is established by Brakes India Our technicians are skilled,
+                                well equipped with Universal test rigs and special tools.
+                                Brakes India ASC's provide quality service with genuine parts for M&HCV equipped with Air Brake System.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/mahindraa.jpg" alt="Mahindra My Garage">
+                        </div>
+                        <div class="down-content">
+                            <h4>Mahindra My Garage</h4>
+                            <p>
+                                We are an authorized Mahindra vehicle service provider, for our own Mahindra vehicles. With certified expertise,
+                                genuine parts, and precision care, we ensure every Mahindra vehicle in our operations runs at peak performance,
+                                reliability, and efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/tyre scrap.jpg" alt="EXIDE Batteries">
+                        </div>
+                        <div class="down-content">
+                            <h4>Tyre Scrap Management</h4>
+                            <p>
+                                We provide efficient and environmentally
+                                responsible tyre scrap collection and recycling
+                                services, helping businesses reduce waste and
+                                meet sustainability goals.Together, we can keep ourz planet cleaner, safer, and more sustainable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/btry.jpg" alt="EXIDE Batteries">
+                        </div>
+                        <div class="down-content">
+                            <h4>Battery Scrap Services</h4>
+                            <p>
+                                Our battery scrap management service focuses
+                                on safe, compliant, and eco-friendly disposal
+                                and recycling of automotive batteries. We work
+                                closely with industry partners to ensure
+                                responsible handling that protects the
+                                environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/automob.jpg" alt="EXIDE Batteries">
+                        </div>
+                        <div class="down-content">
+                            <h4>Automotive Solutions</h4>
+                            <p>
+                                We offer end-to-end automotive solutions for all types 
+                                of vehicles—commercial fleets, and heavy-duty trucks. 
+                                From preventive maintenance to advanced diagnostics and 
+                                major repairs, our highly trained 
+                                technicians use cutting-edge tools and genuine parts to ensure maximum performance, safety, and longevity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/images/cpk.jpg" alt="EXIDE Batteries">
+                        </div>
+                        <div class="down-content">
+                            <h4>CPK-Cost Per Kilometer</h4>
+                            <p>
+                                Our service involves maximizing tire life and improving vehicle efficiency to increasing your cost per kilometre.
+                                Our solutions focus on optimal tire management, precision maintenance,
+                                and performance monitoring—helping you reduce operating expenses, increase safety,
+                                and get the most value from every kilometre driven.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added animated counter section after services -->
+    <!-- Updated counter section with new automotive theme -->
+    <div class="counter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center mb-5">
+                        <h2 style="color: white;">Our <em style="color: var(--primary-color);">Achievement</em></h2>
+                        <span style="color: rgba(255,255,255,0.9);">Trusted by thousands of customers since 2018</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <!-- Added left side image content -->
+                <div class="col-md-6">
+                    <div class="counter-image-content">
+                        <!--<img src="/placeholder.svg?height=200&width=400" alt="Automotive Excellence">-->
+                        <img src="assets/images/automobiles.jpg" alt="EXIDE Batteries">
+
+                        <h3>Excellence in Automotive Service</h3>
+                        <p>Since 2018, Redstone Automotives has been the trusted choice for premium tyre solutions. Our commitment to quality and customer satisfaction has made us a leader in the automotive industry, serving thousands of satisfied customers with top-tier products and exceptional service.</p>
+                    </div>
+                </div>
+                <!-- Moved counter to right side -->
+                <div class="col-md-6">
+                    <div class="count-area-content">
+                        <!-- Updated counter element (removed hardcoded value) -->
+                        <div class="count-digit" data-target="50000" data-duration="2000"></div>
+                        <div class="count-text">Tyres Sold</div>
+                        <div class="count-year">Since 2018</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="more-info" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>About <em>Redstone Automotives</em></h2>
+                        <span>Get to know about our automotive expertise</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="left-image">
+                        <!--<img src="/placeholder.svg?height=400&width=600" alt="Our Location">-->
+                        <img src="assets/images/about us.jpg" alt="EXIDE Batteries">
+
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="right-content">
+                        <!-- Updated about section for automotive business -->
+                        <p>
+                            Redstone was established in 2018 in Namakkal with the primary objective of meeting the demand for NTC tires.
+                            Acknowledging the shifting market requirements for retread tires, we relocated to Chennai in 2019.
+                            Following the closure of the MAN INDIA plant, we acquired the entire inventory of spare parts.
+                            Presently, the distribution of spare parts has become our central business focus..<br><br>We pride ourselves on transparent pricing,
+                            quality workmanship, and exceptional customer service.
+                            Every vehicle that enters our site receives the same level of care and attention we would give our own.
+                        </p>
+                        <!--<a href="#" class="filled-button">Read More</a>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added mission and vision section -->
+            <div class="mission-vision">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4><i class="fa fa-bullseye" style="color: var(--primary-color); margin-right: 10px;"></i>Our Mission</h4>
+                            <p>To provide exceptional automotive services with integrity, expertise, and customer-focused solutions. We strive to build lasting relationships through honest communication, quality workmanship, and reliable service that exceeds expectations every time.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4><i class="fa fa-eye" style="color: var(--primary-color); margin-right: 10px;"></i>Our Vision</h4>
+                            <p>To be the most trusted automotive service provider in our community, known for innovation, sustainability, and excellence. We envision a future where every customer feels confident and satisfied with their automotive care experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Replaced testimonials section with Why Redstone section -->
+    <div class="why-redstone">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Why <em>Redstone?</em></h2>
+                        <span>Discover what makes us the preferred choice for automotive services</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <i class="fa fa-cogs feature-icon"></i>
+                        <h4>Multiservice Solution</h4>
+                        <p>Complete automotive care under one roof - from routine maintenance to complex repairs.<br>We handle all your vehicle needs with expertise and efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <i class="fa fa-group feature-icon"></i>
+                        <h4>Partnerships</h4>
+                        <p>Strong relationships with leading parts suppliers and manufacturers ensure quality components.<br>We work with trusted partners to deliver the best service experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <i class="fa fa-leaf feature-icon"></i>
+                        <h4>Sustainability</h4>
+                        <p>Eco-friendly practices and proper disposal of automotive waste protect our environment.<br>We're committed to sustainable automotive solutions for a greener future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added Our Values section -->
+    <div class="our-values" id="values">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our <em>Values</em></h2>
+                <span>Built for Performance. Trusted for Life</span>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-shield" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Integrity</h5>
+                        <p>Honest and transparent service in every interaction</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-star" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Excellence</h5>
+                        <p>Delivering superior quality in every service we provide</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-users" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Teamwork</h5>
+                        <p>Collaborative approach to solve complex challenges</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-lightbulb-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Innovation</h5>
+                        <p>Embracing new technologies and modern solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-heart" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Care</h5>
+                        <p>Treating every vehicle with attention and respect</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-clock-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Reliability</h5>
+                        <p>Consistent service you can depend on every time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added 6 running brand logos below Our Values section -->
+    <div class="brand-logos" style="background: #f8f9fa; padding: 60px 0; overflow: hidden;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center mb-5">
+                        <h2>Our <em>Partners</em></h2>
+                        <span>Trusted automotive brands we work with</span>
+                    </div>
+                </div>
+            </div>
+            <div class="logos-slider">
+                <div class="logos-track">
+                    <div class="logo-item">
+                        <!--<img src="/placeholder.svg?height=80&width=120&text=BMW" alt="BMW" /> -->
+                        <img src="assets/images/man.png" alt="MAN">
+
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/exide.png" alt="exide" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/mahindra.png" alt="mahindra" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/brakes india.png" alt="tvs-brakes " />
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/mp2.png" alt="mpover" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/jkk.png" alt="jk" />
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div <div class="logo-item">
+    <img src="assets/images/exide.png" alt="exide" />
+</div>
+<div class="logo-item">
+    <img src="assets/images/mahindra.png" alt="mahindra" />
+</div>
+<div class="logo-item">
+    <img src="assets/images/brakes india.png" alt="tvs-brakes " />
+</div>
+<div class="logo-item">
+    <img src="assets/images/mp2.png" alt="mpover" />
+</div>
+<div class="logo-item">
+    <img src="assets/images/jkk.png" alt="jk" />
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added Testimonials Slider -->
+    <!--<div class="custom-slider" style="background: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center">
+                        <h2>Customer <em>Testimonials</em></h2>
+                        <span>What our satisfied customers say about us</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider-track" id="testimonialsTrack">
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
+                                    <p>"Excellent service! They fixed my car quickly and the price was very reasonable. Highly recommended!"</p>
+                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Sarah Johnson</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
+                                    <p>"Professional team with great expertise. They diagnosed the problem accurately and fixed it perfectly."</p>
+                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Mike Chen</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
+                                    <p>"Best automotive service in town! They always deliver quality work on time. Very satisfied customer."</p>
+                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- David Wilson</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
+                                    <p>"Honest pricing and transparent service. They explained everything clearly and did excellent work."</p>
+                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Lisa Rodriguez</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
+                                    <p>"Fast, reliable, and professional. My go-to place for all automotive needs. Highly recommend!"</p>
+                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- James Brown</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
+                                    <p>"Outstanding customer service and quality work. They treat every customer with respect and care."</p>
+                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Emma Davis</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-btn" onclick="changeSlide('testimonials', -1)">❮ Previous</button>
+                    <button class="slider-btn" onclick="changeSlide('testimonials', 1)">Next ❯</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide('testimonials', 1)"></span>
+                    <span class="dot" onclick="currentSlide('testimonials', 2)"></span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Added Special Offers Slider -->
+    <!--<div class="custom-slider" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center">
+                        <h2>Special <em>Offers</em></h2>
+                        <span>Limited time deals on our premium services</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider-track" id="offersTrack">
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
+                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
+                                        <h4 style="margin: 0;">20% OFF</h4>
+                                    </div>
+                                    <h5>Oil Change Service</h5>
+                                    <p>Premium oil change with filter replacement. Valid for all vehicle types.</p>
+                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Valid until March 31st</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
+                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
+                                        <h4 style="margin: 0;">FREE</h4>
+                                    </div>
+                                    <h5>Brake Inspection</h5>
+                                    <p>Comprehensive brake system check with any brake service. Safety first!</p>
+                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Limited Time Offer</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
+                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
+                                        <h4 style="margin: 0;">15% OFF</h4>
+                                    </div>
+                                    <h5>AC Service Package</h5>
+                                    <p>Complete AC system service including gas refill and filter replacement.</p>
+                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Summer Special</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
+                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
+                                        <h4 style="margin: 0;">25% OFF</h4>
+                                    </div>
+                                    <h5>Engine Diagnostics</h5>
+                                    <p>Advanced computer diagnostics to identify engine issues quickly and accurately.</p>
+                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">New Customer Special</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
+                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
+                                        <h4 style="margin: 0;">BUY 2 GET 1</h4>
+                                    </div>
+                                    <h5>Tyre Replacement</h5>
+                                    <p>Premium quality tyres with professional installation and balancing service.</p>
+                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Best Value Deal</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
+                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
+                                        <h4 style="margin: 0;">30% OFF</h4>
+                                    </div>
+                                    <h5>Full Service Package</h5>
+                                    <p>Comprehensive vehicle service including all major system checks and maintenance.</p>
+                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Annual Maintenance</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-btn" onclick="changeSlide('offers', -1)">❮ Previous</button>
+                    <button class="slider-btn" onclick="changeSlide('offers', 1)">Next ❯</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide('offers', 1)"></span>
+                    <span class="dot" onclick="currentSlide('offers', 2)"></span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Fixed navigation link to contact section -->
+    <section class="simple-contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-center mb-5">
+                        <h2>Get in <em style="color: var(--primary-color);">Touch</em></h2>
+                        <span>Contact us for all your automotive needs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="simple-contact-form">
+                        <div class="contact-item">
+                            <i class="fa fa-phone"></i>
+                            <div class="contact-details">
+                                <strong>Phone:</strong>
+                                <span>+91 98402 51694 <br>+91 98405 32694</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <div class="contact-details">
+                                <strong>Email:</strong>
+                                <span>rsal.enquiry@redstoneauto.in</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="contact-details">
+                                <strong>Address:</strong>
+                                <span>
+                                    Redstone Automotive Solutions<br>
+                                    5/231, Padur Main Road,<br> Irulapalayam
+                                    Kuthambakkam(PO),<br> Poonamallee,
+                                    Chennai - 600 124, Tamil Nadu.
+
+                                </span>
+                            </div>
+                            <i class="fa fa-map-marker"></i>
+                            <div class="contact-details">
+                                <span>
+      
+                                    <div style="font-weight: 500">Branch Office:<br></div>
+                                    Karpagam Garden, Pattanur,
+                                    Pondy – Tindivanam Road,<br>
+                                    Auroville P.O, Villupuram – 605 101
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-item">
+                    <!-- Updated footer content for Redstone Automotives -->
+                    <h4>Redstone Automotives</h4>
+                    <p>Your trusted partner for comprehensive automotive solutions. We provide quality services with integrity, expertise, and customer satisfaction as our top priorities.</p>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/profile.php?id=61579105573236"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/redstone_automotives_llp?igsh=YzljYTk1ODg3Zg=="><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/redstoneautomotivesllp/?viewAsMember=true"><i class="fa fa-linkedin"></i></a></li>
+                        <!--<li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item">
+                    <h4>Useful Links</h4>
+                    <ul class="menu-list">
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#values">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!--<div class="col-md-3 footer-item">
+                    <h4>Additional Pages</h4>
+                    <ul class="menu-list">
+                        <li><a href="#">Tire Services</a></li>
+                        <li><a href="#">Battery Solutions</a></li>
+                        <li><a href="#">Spare Parts</a></li>
+                        <li><a href="#">Automotive Recycling</a></li>
+                    </ul>
+                </div>-->
+                <!-- Replaced sitemap with Our Location that redirects to maps -->
+                <div class="col-md-6 footer-item last-item">
+                    <h4>Our Location</h4>
+                    <div class="location-container" style="text-align: center;">
+                        <a href="https://maps.app.goo.gl/aowbAKQ4jRsjpak29?g_st=aw" target="_blank" style="display: inline-block; text-decoration: none; width: 100%;">
+                            <div class="location-card" style="background: #333; padding: 30px 20px; border-radius: 10px; transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent;">
+                                <i class="fa fa-map-marker" style="font-size: 40px; color: var(--primary-color); margin-bottom: 15px; display: block;"></i>
+                                <h5 style="color: white; margin-bottom: 10px; font-size: 16px;">Visit Our Workshop</h5>
+                                <p style="color: #ccc; margin: 0; font-size: 14px; line-height: 1.4;">Click to view our location<br>on Google Maps</p>
+                                <div style="margin-top: 15px; padding: 8px 16px; background: var(--primary-color); border-radius: 5px; display: inline-block;">
+                                    <span style="color: white; font-size: 12px; font-weight: 500;">GET DIRECTIONS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <!-- Updated copyright for Redstone Automotives -->
+                        Copyright &copy; 2025 Redstone Automotives LLP
+                        <!--- Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a>-->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added WhatsApp widget -->
+    <a href="https://wa.me/919600010694?text=Hello%20Redstone%20Automotives,%20I%20would%20like%20to%20inquire%20about%20your%20services"
+       class="whatsapp-widget"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <span class="whatsapp-text">Chat with us</span>
+    </a>
+
+    <!-- Enhanced smooth scroll with delay -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }, 100); // 100ms delay
+                }
+            });
+        });
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/jquery.singlePageNav.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script>
+        $(function () {
+            $('#navbarResponsive').singlePageNav({
+                'offset': 100,
+                'filter': ':not(.external)'
+            });
+            $('#navbarResponsive .nav-link').click(function () {
+                $('#navbarResponsive').removeClass('show');
+            });
+        });
+    </script>
+    <script>
+        var cleared = [];
+        cleared[0] = cleared[1] = cleared[2] = 0;
+        function clearField(t) {
+            if (!cleared[t.id]) {
+                cleared[t.id] = 1;
+                t.value = '';
+                t.style.color = '#fff';
+            }
+        }
+// Enhanced counter animation
+function animateCounter() {
+    const counterElements = document.querySelectorAll('.count-digit');
+
+    if (!counterElements.length) return;
+
+    const animateCount = (el) => {
+        const target = parseInt(el.getAttribute('data-target')) || 50000;
+        const duration = parseInt(el.getAttribute('data-duration')) || 2000;
+        const startTime = performance.now();
+
+        // Clear any existing content
+        el.textContent = '0';
+
+        const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            // Ease-out cubic function for smooth animation
+            const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+            let currentValue = Math.floor(easeOutCubic * target);
+
+            // Ensure we don't exceed the target
+            currentValue = Math.min(currentValue, target);
+
+            // Format number with commas
+            el.textContent = currentValue.toLocaleString();
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            }
+        };
+
+        requestAnimationFrame(updateCounter);
+    };
+
+    // Intersection Observer to trigger animation when element is visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
+                animateCount(entry.target);
+                entry.target.setAttribute('data-animated', 'true');
+            }
+        });
+    }, {
+        threshold: 0.5,
+        rootMargin: '0px 0px 100px 0px' // Trigger slightly before element is in view
+    });
+
+    counterElements.forEach(element => {
+        observer.observe(element);
+    });
+}
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            animateCounter();
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        setTimeout(() => {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }, 100);
+                    }
+                });
+            });
+
+            // Mobile menu toggle
+            $('#navbarResponsive .nav-link').click(function () {
+                $('#navbarResponsive').removeClass('show');
+            });
+        });
+
+        // Remove all slider-related code since those sections are commented out
+        // This prevents the "Cannot read properties of null" error
+    </script>
+</body>
+</html>
