@@ -1616,7 +1616,7 @@
     </div>-->
             <div class="item item-1">
                 <div class="img-fill">
-                    <video autoplay muted loop playsinline>
+                    <video autoplay muted loop playsinline preload="auto">
                         <source src="assets/images/redstonevideoo.mp4" type="video/mp4">
                     </video>
                     <!--<div class="text-content">
@@ -1881,7 +1881,7 @@
 
     <!-- Added animated counter section after services -->
     <!-- Updated counter section with new automotive theme -->
-    <div class="counter-section">
+    <!--<div class="counter-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -1891,29 +1891,29 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center">-->
                 <!-- Added left side image content -->
-                <div class="col-md-6">
-                    <div class="counter-image-content">
+                <!--<div class="col-md-6">
+                    <div class="counter-image-content">-->
                         <!--<img src="/placeholder.svg?height=200&width=400" alt="Automotive Excellence">-->
-                        <img src="assets/images/automobiles.jpg" alt="EXIDE Batteries">
+                        <!--<img src="assets/images/automobiles.jpg" alt="EXIDE Batteries">
 
                         <h3>Excellence in Automotive Service</h3>
                         <p>Since 2018, Redstone Automotives has been the trusted choice for premium tyre solutions. Our commitment to quality and customer satisfaction has made us a leader in the automotive industry, serving thousands of satisfied customers with top-tier products and exceptional service.</p>
                     </div>
-                </div>
+                </div>-->
                 <!-- Moved counter to right side -->
-                <div class="col-md-6">
-                    <div class="count-area-content">
+                <!--<div class="col-md-6">
+                    <div class="count-area-content">-->
                         <!-- Updated counter element (removed hardcoded value) -->
-                        <div class="count-digit" data-target="50000" data-duration="2000"></div>
+                        <!--<div class="count-digit" data-target="50000" data-duration="2000"></div>
                         <div class="count-text">Tyres Sold</div>
                         <div class="count-year">Since 2018</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <!-- About Section -->
     <div class="more-info" id="about">
@@ -2544,6 +2544,12 @@ function animateCounter() {
                     }
                 });
             });
+
+            const video = document.querySelector('video');
+            video.play().catch(error => {
+                console.log('Autoplay failed:', error);
+            });
+        }
 
             // Mobile menu toggle
             $('#navbarResponsive .nav-link').click(function () {
