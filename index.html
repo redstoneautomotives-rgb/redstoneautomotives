@@ -171,7 +171,7 @@
         /* Added background video styles for home section */
         .main-banner {
             position: relative;
-            overflow: hidden;
+/*            overflow: hidden;*/
         }
 
         .background-video {
@@ -1506,14 +1506,14 @@
             transform: scale(1.05);
         }
 
-        /* Added responsive styles for company logo */
+/*         Added responsive styles for company logo */
         .navbar-brand img {
             height: auto;
             max-width: 100%;
             transition: all 0.3s ease;
         }
 
-        /* Tablet styles */
+/*         Tablet styles */
         @media (max-width: 768px) {
             .navbar-brand img {
                 max-height: 35px;
@@ -1521,12 +1521,102 @@
             }
         }
 
-        /* Mobile styles */
+/*         Mobile styles */
         @media (max-width: 480px) {
             .navbar-brand img {
                 max-height: 30px;
                 max-width: 120px;
             }
+        }
+
+
+        /* New modern navigation bar design with glass morphism effect */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+/*            padding: 15px 0;*/
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand img {
+            filter: brightness(1.2);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+            .navbar-nav .nav-item {
+                margin: 0 5px;
+            }
+
+            .navbar-nav .nav-link {
+                color: #B22222 !important;
+                font-weight: 600;
+                padding: 12px 20px !important;
+                border-radius: 25px;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+                .navbar-nav .nav-link::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, rgba(178, 34, 34, 0.2), transparent);
+                    transition: left 0.5s;
+                }
+
+                .navbar-nav .nav-link:hover::before {
+                    left: 100%;
+                }
+
+                .navbar-nav .nav-link:hover {
+                    color: #ffffff !important;
+                    background: linear-gradient(135deg, #B22222, #8B0000);
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.4);
+                    font-weight: 700 !important;
+                }
+
+                .navbar-nav .nav-link.current {
+                    background: linear-gradient(135deg, #B22222, #8B0000);
+                    color: #ffffff !important;
+                    box-shadow: 0 3px 10px rgba(178, 34, 34, 0.3);
+                }
+
+        .navbar-toggler {
+            border: 2px solid #B22222;
+            border-radius: 8px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23B22222' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                background: rgba(178, 34, 34, 0.95);
+                border-radius: 15px;
+                margin-top: 15px;
+                padding: 15px;
+            }
+
+                .navbar-nav .nav-link {
+                    margin: 5px 0;
+                    text-align: center;
+                }
         }
     </style>
 </head>
@@ -1568,7 +1658,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Changed company name to logo -->
-                <a class="navbar-brand" href="Index.html">
+                <a class="navbar-brand" href="index.html">
+                    <!--<img src="/placeholder.svg?height=50&width=200" alt="Redstone Automotives" style="height: 50px;">-->
                     <img src="assets/images/ra.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -1589,7 +1680,7 @@
                             <a class="nav-link" href="#values">Our Values</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Get in Touch</a>
+                            <a class="nav-link" href="#contact">Get in Touch</a> <!-- Added anchor link to contact section -->
                         </li>
                     </ul>
                 </div>
@@ -1599,113 +1690,17 @@
 
     <!-- Banner with background video -->
     <div class="main-banner header-text" id="top">
-        <!--<video autoplay muted loop class="background-video">
-            <source src="/placeholder.mp4?query=professional automotive workshop with mechanics servicing cars and modern equipment" type="video/mp4">
-        </video>-->
         <div class="Modern-Slider">
-            <!--<div class="item item-1">
-        <div class="img-fill">
-            <div class="text-content">-->
-            <!-- Updated banner content for automotive services -->
-            <!--<h6>we are ready to help you</h6>
-                <h4>Professional Auto<br>&amp; Repair Services</h4>
-                <p>Your trusted automotive partner providing comprehensive car care services. From routine maintenance to complex repairs, we keep your vehicle running smoothly and safely on the road.</p>
-                <a href="#services" class="filled-button">our services</a>
-            </div>
-        </div>
-    </div>-->
             <div class="item item-1">
                 <div class="img-fill">
                     <video autoplay muted loop playsinline preload="auto">
                         <source src="assets/images/redstonevideoo.mp4" type="video/mp4">
                     </video>
-                    <!--<div class="text-content">
-                <h6>we are ready to help you</h6>
-                <h4>Financial Analysis<br>&amp; Consulting</h4>
-                <p>This finance HTML template is 100% free of charge provided by TemplateMo. This is one-page version added in 2021 February. <a href="index.html">Multiple-page version</a> with different HTML pages are also available.</p>
-                <a href="contact.html" class="filled-button">contact us</a>
-            </div>-->
+
                 </div>
             </div>
         </div>
     </div>
-    <!-- Banner Ends Here -->
-    <!-- Added Services Slider after banner -->
-    <!--<div class="custom-slider" id="services-slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center">
-                        <h2>Our <em>Services</em></h2>
-                        <span>Professional automotive solutions for every need</span>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-container">
-                <div class="slider-track" id="servicesTrack">
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="service-card">
-                                    <i class="fa fa-wrench" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                                    <h4>Engine Repair</h4>
-                                    <p>Complete engine diagnostics and repair services with state-of-the-art equipment.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="service-card">
-                                    <i class="fa fa-car" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                                    <h4>Brake Service</h4>
-                                    <p>Professional brake inspection, repair, and replacement for your safety.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="service-card">
-                                    <i class="fa fa-cog" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                                    <h4>Transmission</h4>
-                                    <p>Expert transmission repair and maintenance services for smooth driving.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="service-card">
-                                    <i class="fa fa-battery-full" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                                    <h4>Battery Service</h4>
-                                    <p>Battery testing, replacement, and electrical system diagnostics.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="service-card">
-                                    <i class="fa fa-oil-can" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                                    <h4>Oil Change</h4>
-                                    <p>Quick and professional oil change services with premium lubricants.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="service-card">
-                                    <i class="fa fa-shield" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                                    <h4>AC Service</h4>
-                                    <p>Complete air conditioning repair and maintenance for comfort driving.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-nav">
-                    <button class="slider-btn" onclick="changeSlide('services', -1)">❮ Previous</button>
-                    <button class="slider-btn" onclick="changeSlide('services', 1)">Next ❯</button>
-                </div>
-                <div class="slider-dots">
-                    <span class="dot active" onclick="currentSlide('services', 1)"></span>
-                    <span class="dot" onclick="currentSlide('services', 2)"></span>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
     <!-- Services Section -->
     <div class="services" id="services">
         <div class="container">
@@ -1736,7 +1731,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="service-item h-100">
                         <div class="service-image">
-                            <img src="assets/images/Maan.jpg" alt="MAN Spares">
+                            <img src="assets/images/maan.jpg" alt="MAN Spares">
                         </div>
                         <div class="down-content">
                             <h4>Spare Parts-MAN Spares</h4>
@@ -1751,7 +1746,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="service-item h-100">
                         <div class="service-image">
-                            <img src="assets/images/exidee.png" alt="EXIDE Batteries">
+                            <img src="assets/images/exidee.jpg" alt="EXIDE Batteries">
                         </div>
                         <div class="down-content">
                             <h4>Batteries-EXIDE</h4>
@@ -1845,15 +1840,15 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="service-item h-100">
                         <div class="service-image">
-                            <img src="assets/images/automob.jpg" alt="EXIDE Batteries">
+                            <img src="assets/images/automoto.jpg" alt="automotives">
                         </div>
                         <div class="down-content">
                             <h4>Automotive Solutions</h4>
                             <p>
-                                We offer end-to-end automotive solutions for all types 
-                                of vehicles—commercial fleets, and heavy-duty trucks. 
-                                From preventive maintenance to advanced diagnostics and 
-                                major repairs, our highly trained 
+                                We offer end-to-end automotive solutions for all types
+                                of vehicles—commercial fleets, and heavy-duty trucks.
+                                From preventive maintenance to advanced diagnostics and
+                                major repairs, our highly trained
                                 technicians use cutting-edge tools and genuine parts to ensure maximum performance, safety, and longevity.
                             </p>
                         </div>
@@ -1862,7 +1857,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="service-item h-100">
                         <div class="service-image">
-                            <img src="assets/images/cpk.jpg" alt="EXIDE Batteries">
+                            <img src="assets/images/cpk.jpg" alt="CPK">
                         </div>
                         <div class="down-content">
                             <h4>CPK-Cost Per Kilometer</h4>
@@ -1892,21 +1887,21 @@
                 </div>
             </div>
             <div class="row align-items-center">-->
-                <!-- Added left side image content -->
-                <!--<div class="col-md-6">
-                    <div class="counter-image-content">-->
-                        <!--<img src="/placeholder.svg?height=200&width=400" alt="Automotive Excellence">-->
-                        <!--<img src="assets/images/automobiles.jpg" alt="EXIDE Batteries">
+    <!-- Added left side image content -->
+    <!--<div class="col-md-6">
+        <div class="counter-image-content">-->
+    <!--<img src="/placeholder.svg?height=200&width=400" alt="Automotive Excellence">-->
+    <!--<img src="assets/images/automobiles.jpg" alt="EXIDE Batteries">
 
-                        <h3>Excellence in Automotive Service</h3>
-                        <p>Since 2018, Redstone Automotives has been the trusted choice for premium tyre solutions. Our commitment to quality and customer satisfaction has made us a leader in the automotive industry, serving thousands of satisfied customers with top-tier products and exceptional service.</p>
-                    </div>
-                </div>-->
-                <!-- Moved counter to right side -->
-                <!--<div class="col-md-6">
-                    <div class="count-area-content">-->
-                        <!-- Updated counter element (removed hardcoded value) -->
-                        <!--<div class="count-digit" data-target="50000" data-duration="2000"></div>
+            <h3>Excellence in Automotive Service</h3>
+            <p>Since 2018, Redstone Automotives has been the trusted choice for premium tyre solutions. Our commitment to quality and customer satisfaction has made us a leader in the automotive industry, serving thousands of satisfied customers with top-tier products and exceptional service.</p>
+        </div>
+    </div>-->
+    <!-- Moved counter to right side -->
+    <!--<div class="col-md-6">
+        <div class="count-area-content">-->
+    <!-- Updated counter element (removed hardcoded value) -->
+    <!--<div class="count-digit" data-target="50000" data-duration="2000"></div>
                         <div class="count-text">Tyres Sold</div>
                         <div class="count-year">Since 2018</div>
                     </div>
@@ -1914,7 +1909,6 @@
             </div>
         </div>
     </div>-->
-
     <!-- About Section -->
     <div class="more-info" id="about">
         <div class="container">
@@ -2010,51 +2004,51 @@
             </div>
         </div>
 
-            <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="value-item">
-                        <i class="fa fa-shield" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                        <h5>Integrity</h5>
-                        <p>Honest and transparent service in every interaction</p>
-                    </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="value-item">
+                    <i class="fa fa-shield" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h5>Integrity</h5>
+                    <p>Honest and transparent service in every interaction</p>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="value-item">
-                        <i class="fa fa-star" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                        <h5>Excellence</h5>
-                        <p>Delivering superior quality in every service we provide</p>
-                    </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="value-item">
+                    <i class="fa fa-star" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h5>Excellence</h5>
+                    <p>Delivering superior quality in every service we provide</p>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="value-item">
-                        <i class="fa fa-users" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                        <h5>Teamwork</h5>
-                        <p>Collaborative approach to solve complex challenges</p>
-                    </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="value-item">
+                    <i class="fa fa-users" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h5>Teamwork</h5>
+                    <p>Collaborative approach to solve complex challenges</p>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="value-item">
-                        <i class="fa fa-lightbulb-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                        <h5>Innovation</h5>
-                        <p>Embracing new technologies and modern solutions</p>
-                    </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="value-item">
+                    <i class="fa fa-lightbulb-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h5>Innovation</h5>
+                    <p>Embracing new technologies and modern solutions</p>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="value-item">
-                        <i class="fa fa-heart" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                        <h5>Care</h5>
-                        <p>Treating every vehicle with attention and respect</p>
-                    </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="value-item">
+                    <i class="fa fa-heart" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h5>Care</h5>
+                    <p>Treating every vehicle with attention and respect</p>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="value-item">
-                        <i class="fa fa-clock-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                        <h5>Reliability</h5>
-                        <p>Consistent service you can depend on every time</p>
-                    </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="value-item">
+                    <i class="fa fa-clock-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h5>Reliability</h5>
+                    <p>Consistent service you can depend on every time</p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Added 6 running brand logos below Our Values section -->
@@ -2187,7 +2181,6 @@
             </div>
         </div>
     </div>-->
-
     <!-- Added Special Offers Slider -->
     <!--<div class="custom-slider" style="background: #f8f9fa;">
         <div class="container">
@@ -2281,7 +2274,6 @@
             </div>
         </div>
     </div>-->
-
     <!-- Fixed navigation link to contact section -->
     <section class="simple-contact-section section-padding" id="contact">
         <div class="container">
@@ -2325,7 +2317,7 @@
                             <i class="fa fa-map-marker"></i>
                             <div class="contact-details">
                                 <span>
-      
+
                                     <div style="font-weight: 500">Branch Office:<br></div>
                                     Karpagam Garden, Pattanur,
                                     Pondy – Tindivanam Road,<br>
@@ -2469,59 +2461,59 @@
                 t.style.color = '#fff';
             }
         }
-// Enhanced counter animation
-function animateCounter() {
-    const counterElements = document.querySelectorAll('.count-digit');
+        // Enhanced counter animation
+        function animateCounter() {
+            const counterElements = document.querySelectorAll('.count-digit');
 
-    if (!counterElements.length) return;
+            if (!counterElements.length) return;
 
-    const animateCount = (el) => {
-        const target = parseInt(el.getAttribute('data-target')) || 50000;
-        const duration = parseInt(el.getAttribute('data-duration')) || 2000;
-        const startTime = performance.now();
+            const animateCount = (el) => {
+                const target = parseInt(el.getAttribute('data-target')) || 50000;
+                const duration = parseInt(el.getAttribute('data-duration')) || 2000;
+                const startTime = performance.now();
 
-        // Clear any existing content
-        el.textContent = '0';
+                // Clear any existing content
+                el.textContent = '0';
 
-        const updateCounter = (currentTime) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
+                const updateCounter = (currentTime) => {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
 
-            // Ease-out cubic function for smooth animation
-            const easeOutCubic = 1 - Math.pow(1 - progress, 3);
-            let currentValue = Math.floor(easeOutCubic * target);
+                    // Ease-out cubic function for smooth animation
+                    const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                    let currentValue = Math.floor(easeOutCubic * target);
 
-            // Ensure we don't exceed the target
-            currentValue = Math.min(currentValue, target);
+                    // Ensure we don't exceed the target
+                    currentValue = Math.min(currentValue, target);
 
-            // Format number with commas
-            el.textContent = currentValue.toLocaleString();
+                    // Format number with commas
+                    el.textContent = currentValue.toLocaleString();
 
-            if (progress < 1) {
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+
                 requestAnimationFrame(updateCounter);
-            }
-        };
+            };
 
-        requestAnimationFrame(updateCounter);
-    };
+            // Intersection Observer to trigger animation when element is visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
+                        animateCount(entry.target);
+                        entry.target.setAttribute('data-animated', 'true');
+                    }
+                });
+            }, {
+                threshold: 0.5,
+                rootMargin: '0px 0px 100px 0px' // Trigger slightly before element is in view
+            });
 
-    // Intersection Observer to trigger animation when element is visible
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
-                animateCount(entry.target);
-                entry.target.setAttribute('data-animated', 'true');
-            }
-        });
-    }, {
-        threshold: 0.5,
-        rootMargin: '0px 0px 100px 0px' // Trigger slightly before element is in view
-    });
-
-    counterElements.forEach(element => {
-        observer.observe(element);
-    });
-}
+            counterElements.forEach(element => {
+                observer.observe(element);
+            });
+        }
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function () {
             animateCounter();
@@ -2551,15 +2543,14 @@ function animateCounter() {
             });
         }
 
-            // Mobile menu toggle
-            $('#navbarResponsive .nav-link').click(function () {
-                $('#navbarResponsive').removeClass('show');
-            });
+                        // Mobile menu toggle
+                        $('#navbarResponsive .nav-link').click(function () {
+            $('#navbarResponsive').removeClass('show');
         });
+                    });
 
         // Remove all slider-related code since those sections are commented out
         // This prevents the "Cannot read properties of null" error
     </script>
 </body>
 </html>
-
