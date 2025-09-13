@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
-    <!-- Updated styles with brick red theme, removed intro video, added background video, animations, and sitemap -->
+    <!-- Updated styles with brick red theme, removed intro video, added <b></b>ackground video, animations, and sitemap -->
     <style>
         :root {
             --primary-color: #B22222;
@@ -171,7 +171,7 @@
         /* Added background video styles for home section */
         .main-banner {
             position: relative;
-/*            overflow: hidden;*/
+            /*            overflow: hidden;*/
         }
 
         .background-video {
@@ -731,6 +731,7 @@
             transform: scale(1.2);
         }
 
+        /* Enhanced mobile responsive styles */
         @media (max-width: 768px) {
             .whatsapp-widget {
                 padding: 12px;
@@ -740,6 +741,57 @@
             .whatsapp-text {
                 display: none;
             }
+
+            /* Enhanced mobile typography */
+            .section-heading h2 {
+                font-size: 2rem !important;
+            }
+
+            .section-heading span {
+                font-size: 1rem !important;
+            }
+
+            /* Better mobile spacing */
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            /* Mobile-first service cards */
+            .service-item {
+                margin-bottom: 30px;
+                padding: 20px;
+            }
+
+                .service-item .down-content h4 {
+                    font-size: 1.3rem;
+                }
+
+                .service-item .down-content p {
+                    font-size: 0.95rem;
+                    line-height: 1.6;
+                }
+        }
+
+        /* Added extra small mobile styles */
+        @media (max-width: 480px) {
+            .section-heading h2 {
+                font-size: 1.8rem !important;
+            }
+
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .service-item {
+                padding: 15px;
+            }
+
+                .service-item .service-image img {
+                    max-width: 100%;
+                    height: auto;
+                }
         }
 
         /* Added sitemap styles */
@@ -823,7 +875,7 @@
 
         /* Added Our Values section styles */
         .our-values {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/placeholder.svg?height=600&width=1200') center/cover;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
             padding: 60px 0;
             color: white;
         }
@@ -1391,7 +1443,6 @@
 
         /* Added simple contact section styles */
         .simple-contact-section {
-
             background: #f8f9fa;
             padding: 60px 0;
         }
@@ -1434,40 +1485,78 @@
             font-size: 15px;
         }
 
-        /* Added responsive styles for modern counter */
+        /* Enhanced mobile responsive styles for modern counter */
         @media (max-width: 768px) {
             .modern-counter-card {
-                padding: 30px;
-                max-width: 250px;
+                padding: 25px;
+                max-width: 280px;
+                margin: 0 auto 30px;
             }
 
             .progress-ring {
-                width: 150px;
-                height: 150px;
+                width: 140px;
+                height: 140px;
             }
 
             .count-digit {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
 
             .count-label {
-                font-size: 1rem;
+                font-size: 0.95rem;
             }
 
             .simple-contact-form {
-                padding: 30px 20px;
+                padding: 25px 15px;
             }
 
             .contact-item {
                 flex-direction: column;
                 text-align: center;
-                padding: 15px 0;
+                padding: 20px 0;
+                margin-bottom: 15px;
             }
 
                 .contact-item i {
                     margin-right: 0;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
+                    font-size: 2rem;
                 }
+
+            /* Better mobile counter layout */
+            .counter-container {
+                text-align: center;
+            }
+
+            .counter-stat-box {
+                display: inline-block;
+                margin: 10px 5px;
+            }
+        }
+
+        /* Enhanced extra small mobile styles */
+        @media (max-width: 480px) {
+            .modern-counter-card {
+                padding: 20px;
+                max-width: 260px;
+            }
+
+            .progress-ring {
+                width: 120px;
+                height: 120px;
+            }
+
+            .count-digit {
+                font-size: 1.8rem;
+            }
+
+            .simple-contact-form {
+                padding: 20px 10px;
+            }
+
+            .contact-item {
+                padding: 15px 0;
+            }
         }
 
         /* Additional styling for service images */
@@ -1508,26 +1597,46 @@
             transform: scale(1.05);
         }
 
-/*         Added responsive styles for company logo */
+        /*         Added responsive styles for company logo */
         .navbar-brand img {
             height: auto;
             max-width: 100%;
             transition: all 0.3s ease;
         }
 
-/*         Tablet styles */
+        /*         Tablet styles */
         @media (max-width: 768px) {
             .navbar-brand img {
                 max-height: 65px;
                 max-width: 160px;
             }
+
+            /* Better mobile navigation */
+            .navbar {
+                padding: 10px 0;
+            }
+
+            .navbar-toggler {
+                border: none;
+                padding: 4px 8px;
+            }
         }
 
-/*         Mobile styles */
+        /* Enhanced mobile styles */
         @media (max-width: 480px) {
             .navbar-brand img {
-                max-height: 60px;
-                max-width: 150px;
+                max-height: 55px;
+                max-width: 140px;
+            }
+
+            .navbar {
+                padding: 8px 0;
+            }
+
+            /* Mobile-optimized container */
+            .container-fluid {
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
 
@@ -1537,7 +1646,7 @@
             background: rgba(255, 255, 255, 0.1) !important;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-/*            padding: 15px 0;*/
+            /*            padding: 15px 0;*/
             transition: all 0.3s ease;
         }
 
@@ -1606,20 +1715,45 @@
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23B22222' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
 
-        /* Responsive design for mobile */
-        @media (max-width: 991px) {
+/*         Enhanced responsive design for mobile */
+                @media (max-width: 991px) {
             .navbar-nav {
-/*                background: rgba(178, 34, 34, 0.95);*/
                 border-radius: 15px;
                 margin-top: 15px;
                 padding: 15px;
+                background: rgba(178, 34, 34, 0.95);
+             background: transparent !important;
+            }
+
+                .navbar-nav .nav-link {
+                    margin: 8px 0;
+                    text-align: center;
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+             color: white !important;
+                }
+
+                    .navbar-nav .nav-link:hover {
+     color: var(--primary-color) !important;
+                        background: rgba(255, 255, 255, 0.1);
+                    }
+        }
+
+        /* Mobile-specific navigation improvements */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                margin-top: 10px;
+                padding: 10px;
             }
 
                 .navbar-nav .nav-link {
                     margin: 5px 0;
-                    text-align: center;
+                    padding: 8px 12px;
+                    font-size: 1rem;
                 }
         }
+
         .full-divider {
             position: relative;
             height: 4px;
@@ -1640,6 +1774,1305 @@
             }
 
 
+
+        .counter-container {
+            max-width: 1100px;
+            width: 100%;
+            text-align: center;
+            padding: 40px;
+            backdrop-filter: blur(6px);
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+        }
+
+        .counter-title {
+            font-size: 2.2rem;
+            color: #B22222;
+            margin-bottom: 6px;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(231, 76, 60, 0.3), 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-subtitle {
+            font-size: 1rem;
+            color: #ffff;
+            margin-bottom: 10px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-number {
+            font-size: 4.2rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ffff, #ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 10px 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .counter-text {
+            font-size: 1.1rem;
+            color: #edcc1f;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-year {
+            font-size: 1.7rem;
+            color: #B22222;
+            font-weight: 900;
+            margin-top: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-number:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 0 15px rgba(231, 76, 60, 0.6));
+        }
+
+        .counter-animation-container {
+            height: 120px;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .tyre-lane {
+            position: relative;
+            width: 100%;
+            height: 170px;
+            overflow: hidden;
+            margin-top: 10px;
+            z-index: 0;
+        }
+
+        .tyre {
+            position: absolute;
+            bottom: 44px;
+            left: -160px;
+            width: 110px;
+            height: 110px;
+            animation: tyre-move 6s linear infinite;
+            will-change: transform;
+            z-index: 0;
+        }
+
+            .tyre img {
+                width: 150%;
+                height: 150%;
+                object-fit: contain;
+                animation: tyre-spin 1s linear infinite;
+                will-change: transform;
+            }
+
+        @keyframes tyre-move {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(100vw + 320px));
+            }
+        }
+
+        @keyframes tyre-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .tyre, .tyre img {
+                animation: none;
+            }
+        }
+
+        .counter-number.animate {
+            animation: pulse 3s ease-in-out infinite;
+            box-shadow: none !important;
+        }
+
+        .counter-info-text {
+            font-size: 0.9rem;
+            color: #9d9d9d;
+            font-weight: 300px;
+            max-width: 600px;
+            margin: 15px auto 5px;
+            line-height: 1.4;
+            padding: 0 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .counter-stat-box {
+            background: rgba(231, 76, 60, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            margin: 5px;
+            min-width: 120px;
+            border: 1px solid rgba(231, 76, 60, 0.4);
+        }
+
+        .counter-stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e74c3c;
+            margin-bottom: 3px;
+        }
+
+        .counter-stat-label {
+            font-size: 0.8rem;
+            color: #ff6b6b;
+        }
+
+        /* Enhanced mobile counter styles */
+        @media (max-width: 768px) {
+            .counter-title {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+            }
+
+            .counter-number {
+                font-size: 2.8rem;
+            }
+
+            .counter-container {
+                padding: 30px 15px;
+                margin-bottom: 30px;
+            }
+
+            .counter-stat-box {
+                min-width: 80px;
+                padding: 10px 8px;
+                margin: 5px;
+            }
+
+            .counter-stat-number {
+                font-size: 1.3rem;
+            }
+
+            .counter-animation-container {
+                height: 80px;
+                margin-bottom: 20px;
+            }
+
+            /* Better mobile grid layout */
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+                .row > [class*="col-"] {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+        }
+
+        /* Extra small mobile counter adjustments */
+        @media (max-width: 480px) {
+            .counter-title {
+                font-size: 1.4rem;
+            }
+
+            .counter-number {
+                font-size: 2.4rem;
+            }
+
+            .counter-container {
+                padding: 20px 10px;
+            }
+
+            .counter-stat-box {
+                min-width: 70px;
+                padding: 8px 6px;
+            }
+
+            .counter-stat-number {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Additional styling for service images */
+        .service-item .service-image {
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+            /* Added overlay effect on hover */
+            .service-item .service-image::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(220, 53, 69, 0.1), rgba(178, 34, 34, 0.1));
+                opacity: 0;
+                transition: opacity var(--transition-speed) var(--transition-easing);
+                z-index: 1;
+            }
+
+        .service-item:hover .service-image::before {
+            opacity: 1;
+        }
+
+        .service-item .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-speed) var(--transition-easing);
+        }
+
+        /* Added subtle image zoom on hover */
+        .service-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /*         Added responsive styles for company logo */
+        .navbar-brand img {
+            height: auto;
+            max-width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        /*         Tablet styles */
+        @media (max-width: 768px) {
+            .navbar-brand img {
+                max-height: 65px;
+                max-width: 160px;
+            }
+
+            /* Better mobile navigation */
+            .navbar {
+                padding: 10px 0;
+            }
+
+            .navbar-toggler {
+                border: none;
+                padding: 4px 8px;
+            }
+        }
+
+        /* Enhanced mobile styles */
+        @media (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 55px;
+                max-width: 140px;
+            }
+
+            .navbar {
+                padding: 8px 0;
+            }
+
+            /* Mobile-optimized container */
+            .container-fluid {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+
+        /* New modern navigation bar design with glass morphism effect */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            /*            padding: 15px 0;*/
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand img {
+            filter: brightness(1.2);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+            .navbar-nav .nav-item {
+                margin: 0 5px;
+            }
+
+            .navbar-nav .nav-link {
+                color: #B22222 !important;
+                font-weight: 600;
+                padding: 12px 20px !important;
+                border-radius: 25px;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+                .navbar-nav .nav-link::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, rgba(178, 34, 34, 0.2), transparent);
+                    transition: left 0.5s;
+                }
+
+                .navbar-nav .nav-link:hover::before {
+                    left: 100%;
+                }
+
+                .navbar-nav .nav-link:hover {
+                    color: #ffffff !important;
+                    background: linear-gradient(135deg, #B22222, #8B0000);
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.4);
+                    font-weight: 700 !important;
+                }
+
+                .navbar-nav .nav-link.current {
+                    background: linear-gradient(135deg, #B22222, #8B0000);
+                    color: #ffffff !important;
+                    box-shadow: 0 3px 10px rgba(178, 34, 34, 0.3);
+                }
+
+        .navbar-toggler {
+            border: 2px solid #B22222;
+            border-radius: 8px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23B22222' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Enhanced responsive design for mobile */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                border-radius: 15px;
+                margin-top: 15px;
+                padding: 15px;
+                background: rgba(178, 34, 34, 0.95);
+            }
+
+                .navbar-nav .nav-link {
+                    margin: 8px 0;
+                    text-align: center;
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                }
+
+                    .navbar-nav .nav-link:hover {
+                        background: rgba(255, 255, 255, 0.1);
+                    }
+        }
+
+        /* Mobile-specific navigation improvements */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                margin-top: 10px;
+                padding: 10px;
+            }
+
+                .navbar-nav .nav-link {
+                    margin: 5px 0;
+                    padding: 8px 12px;
+                    font-size: 1rem;
+                }
+        }
+        .full-divider {
+            position: relative;
+            height: 4px;
+            background: linear-gradient(to right, transparent, #B22222, transparent);
+            margin: 10px 0 20px;
+        }
+
+            .full-divider::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 120px; /* center highlight length */
+                height: 6px;
+                background: #B22222;
+                border-radius: 3px;
+            }
+
+        .counter-section {
+            background: url('assets/images/automobiles.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: s;
+            color: #fff;
+            padding: 80px 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+
+        .counter-container {
+            max-width: 1100px;
+            width: 100%;
+            text-align: center;
+            padding: 40px;
+            backdrop-filter: blur(6px);
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+        }
+
+        .counter-title {
+            font-size: 2.2rem;
+            color: #B22222;
+            margin-bottom: 6px;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(231, 76, 60, 0.3), 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-subtitle {
+            font-size: 1rem;
+            color: #ffff;
+            margin-bottom: 10px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-number {
+            font-size: 4.2rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ffff, #ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 10px 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .counter-text {
+            font-size: 1.1rem;
+            color: #edcc1f;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-year {
+            font-size: 1.7rem;
+            color: #B22222;
+            font-weight: 900;
+            margin-top: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-number:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 0 15px rgba(231, 76, 60, 0.6));
+        }
+
+        .counter-animation-container {
+            height: 120px;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .tyre-lane {
+            position: relative;
+            width: 100%;
+            height: 170px;
+            overflow: hidden;
+            margin-top: 10px;
+            z-index: 0;
+        }
+
+        .tyre {
+            position: absolute;
+            bottom: 44px;
+            left: -160px;
+            width: 110px;
+            height: 110px;
+            animation: tyre-move 5s linear infinite;
+            will-change: transform;
+            z-index: 0;
+        }
+
+            .tyre img {
+                width: 150%;
+                height: 150%;
+                object-fit: contain;
+                animation: tyre-spin 1s linear infinite;
+                will-change: transform;
+            }
+
+        @keyframes tyre-move {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(100vw + 320px));
+            }
+        }
+
+        @keyframes tyre-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .tyre, .tyre img {
+                animation: none;
+            }
+        }
+
+        .counter-number.animate {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .counter-info-text {
+            font-size: 0.9rem;
+            color: #9d9d9d;
+            font-weight: 300px;
+            max-width: 600px;
+            margin: 15px auto 5px;
+            line-height: 1.4;
+            padding: 0 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .counter-stat-box {
+            background: rgba(231, 76, 60, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            margin: 5px;
+            min-width: 120px;
+            border: 1px solid rgba(231, 76, 60, 0.4);
+        }
+
+        .counter-stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e74c3c;
+            margin-bottom: 3px;
+        }
+
+        .counter-stat-label {
+            font-size: 0.8rem;
+            color: #ff6b6b;
+        }
+
+        /* Enhanced mobile counter styles */
+        @media (max-width: 768px) {
+            .counter-title {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+            }
+
+            .counter-number {
+                font-size: 2.8rem;
+            }
+
+            .counter-container {
+                padding: 30px 15px;
+                margin-bottom: 30px;
+            }
+
+            .counter-stat-box {
+                min-width: 80px;
+                padding: 10px 8px;
+                margin: 5px;
+            }
+
+            .counter-stat-number {
+                font-size: 1.3rem;
+            }
+
+            .counter-animation-container {
+                height: 80px;
+                margin-bottom: 20px;
+            }
+
+            /* Better mobile grid layout */
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+                .row > [class*="col-"] {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+        }
+
+        /* Extra small mobile counter adjustments */
+        @media (max-width: 480px) {
+            .counter-title {
+                font-size: 1.4rem;
+            }
+
+            .counter-number {
+                font-size: 2.4rem;
+            }
+
+            .counter-container {
+                padding: 20px 10px;
+            }
+
+            .counter-stat-box {
+                min-width: 70px;
+                padding: 8px 6px;
+            }
+
+            .counter-stat-number {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Added simple contact section styles */
+        .simple-contact-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .simple-contact-form {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+            .contact-item:last-child {
+                border-bottom: none;
+            }
+
+            .contact-item i {
+                font-size: 24px;
+                color: var(--primary-color);
+                margin-right: 20px;
+                width: 30px;
+                text-align: center;
+            }
+
+        .contact-details strong {
+            display: block;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .contact-details span {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Enhanced responsive styles for modern counter */
+        @media (max-width: 768px) {
+            .modern-counter-card {
+                padding: 25px;
+                max-width: 280px;
+                margin: 0 auto 30px;
+            }
+
+            .progress-ring {
+                width: 140px;
+                height: 140px;
+            }
+
+            .count-digit {
+                font-size: 2rem;
+            }
+
+            .count-label {
+                font-size: 0.95rem;
+            }
+
+            .simple-contact-form {
+                padding: 25px 15px;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px 0;
+                margin-bottom: 15px;
+            }
+
+                .contact-item i {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                    font-size: 2rem;
+                }
+
+            /* Better mobile counter layout */
+            .counter-container {
+                text-align: center;
+            }
+
+            .counter-stat-box {
+                display: inline-block;
+                margin: 10px 5px;
+            }
+        }
+
+        /* Enhanced extra small mobile styles */
+        @media (max-width: 480px) {
+            .modern-counter-card {
+                padding: 20px;
+                max-width: 260px;
+            }
+
+            .progress-ring {
+                width: 120px;
+                height: 120px;
+            }
+
+            .count-digit {
+                font-size: 1.8rem;
+            }
+
+            .simple-contact-form {
+                padding: 20px 10px;
+            }
+
+            .contact-item {
+                padding: 15px 0;
+            }
+        }
+
+        /* Additional styling for service images */
+        .service-item .service-image {
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+            /* Added overlay effect on hover */
+            .service-item .service-image::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(220, 53, 69, 0.1), rgba(178, 34, 34, 0.1));
+                opacity: 0;
+                transition: opacity var(--transition-speed) var(--transition-easing);
+                z-index: 1;
+            }
+
+        .service-item:hover .service-image::before {
+            opacity: 1;
+        }
+
+        .service-item .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-speed) var(--transition-easing);
+        }
+
+        /* Added subtle image zoom on hover */
+        .service-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /*         Added responsive styles for company logo */
+        .navbar-brand img {
+            height: auto;
+            max-width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        /*         Tablet styles */
+        @media (max-width: 768px) {
+            .navbar-brand img {
+                max-height: 65px;
+                max-width: 160px;
+            }
+
+            /* Better mobile navigation */
+            .navbar {
+                padding: 10px 0;
+            }
+
+            .navbar-toggler {
+                border: none;
+                padding: 4px 8px;
+            }
+        }
+
+        /* Enhanced mobile styles */
+        @media (max-width: 480px) {
+            .navbar-brand img {
+                max-height: 55px;
+                max-width: 140px;
+            }
+
+            .navbar {
+                padding: 8px 0;
+            }
+
+            /* Mobile-optimized container */
+            .container-fluid {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+
+        /* New modern navigation bar design with glass morphism effect */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            /*            padding: 15px 0;*/
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand img {
+            filter: brightness(1.2);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+            .navbar-nav .nav-item {
+                margin: 0 5px;
+            }
+
+            .navbar-nav .nav-link {
+                color: #B22222 !important;
+                font-weight: 600;
+                padding: 12px 20px !important;
+                border-radius: 25px;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+                .navbar-nav .nav-link::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, rgba(178, 34, 34, 0.2), transparent);
+                    transition: left 0.5s;
+                }
+
+                .navbar-nav .nav-link:hover::before {
+                    left: 100%;
+                }
+
+                .navbar-nav .nav-link:hover {
+                    color: #ffffff !important;
+                    background: linear-gradient(135deg, #B22222, #8B0000);
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.4);
+                    font-weight: 700 !important;
+                }
+
+                .navbar-nav .nav-link.current {
+                    background: linear-gradient(135deg, #B22222, #8B0000);
+                    color: #ffffff !important;
+                    box-shadow: 0 3px 10px rgba(178, 34, 34, 0.3);
+                }
+
+        .navbar-toggler {
+            border: 2px solid #B22222;
+            border-radius: 8px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23B22222' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Enhanced responsive design for mobile */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                border-radius: 15px;
+                margin-top: 15px;
+                padding: 15px;
+                background: rgba(178, 34, 34, 0.95);
+            }
+
+                .navbar-nav .nav-link {
+                    margin: 8px 0;
+                    text-align: center;
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                }
+
+                    .navbar-nav .nav-link:hover {
+                        background: rgba(255, 255, 255, 0.1);
+                    }
+        }
+
+        /* Mobile-specific navigation improvements */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                margin-top: 10px;
+                padding: 10px;
+            }
+
+                .navbar-nav .nav-link {
+                    margin: 5px 0;
+                    padding: 8px 12px;
+                    font-size: 1rem;
+                }
+        }
+
+        .full-divider {
+            position: relative;
+            height: 4px;
+            background: linear-gradient(to right, transparent, #B22222, transparent);
+            margin: 50px 0 40px;
+        }
+
+            .full-divider::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 120px; /* center highlight length */
+                height: 6px;
+                background: #B22222;
+                border-radius: 3px;
+            }
+
+
+
+        .counter-container {
+            max-width: 1100px;
+            width: 100%;
+            text-align: center;
+            padding: 40px;
+            backdrop-filter: blur(6px);
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+        }
+
+        .counter-title {
+            font-size: 2.2rem;
+            color: #B22222;
+            margin-bottom: 6px;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(231, 76, 60, 0.3), 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-subtitle {
+            font-size: 1rem;
+            color: #ffff;
+            margin-bottom: 10px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-number {
+            font-size: 4.2rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ffff, #ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 10px 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .counter-text {
+            font-size: 1.1rem;
+            color: #edcc1f;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-year {
+            font-size: 1.7rem;
+            color: #B22222;
+            font-weight: 900;
+            margin-top: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-number:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 0 15px rgba(231, 76, 60, 0.6));
+        }
+
+        .counter-animation-container {
+            height: 120px;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .tyre-lane {
+            position: relative;
+            width: 100%;
+            height: 170px;
+            overflow: hidden;
+            margin-top: 10px;
+            z-index: 0;
+        }
+
+        .tyre {
+            position: absolute;
+            bottom: 44px;
+            left: -160px;
+            width: 110px;
+            height: 110px;
+            animation: tyre-move 5s linear infinite;
+            will-change: transform;
+            z-index: 0;
+        }
+
+            .tyre img {
+                width: 150%;
+                height: 150%;
+                object-fit: contain;
+                animation: tyre-spin 1s linear infinite;
+                will-change: transform;
+            }
+
+        @keyframes tyre-move {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(100vw + 320px));
+            }
+        }
+
+        @keyframes tyre-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .tyre, .tyre img {
+                animation: none;
+            }
+        }
+
+        .counter-number.animate {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .counter-info-text {
+            font-size: 0.9rem;
+            color: #9d9d9d;
+            font-weight: 300px;
+            max-width: 600px;
+            margin: 15px auto 5px;
+            line-height: 1.4;
+            padding: 0 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .counter-stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .counter-stat-box {
+            background: rgba(231, 76, 60, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            margin: 5px;
+            min-width: 120px;
+            border: 1px solid rgba(231, 76, 60, 0.4);
+        }
+
+        .counter-stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e74c3c;
+            margin-bottom: 3px;
+        }
+
+        .counter-stat-label {
+            font-size: 0.8rem;
+            color: #ff6b6b;
+        }
+
+        /* Enhanced mobile counter styles */
+        @media (max-width: 768px) {
+            .counter-title {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+            }
+
+            .counter-number {
+                font-size: 2.8rem;
+            }
+
+            .counter-container {
+                padding: 30px 15px;
+                margin-bottom: 30px;
+            }
+
+            .counter-stat-box {
+                min-width: 80px;
+                padding: 10px 8px;
+                margin: 5px;
+            }
+
+            .counter-stat-number {
+                font-size: 1.3rem;
+            }
+
+            .counter-animation-container {
+                height: 80px;
+                margin-bottom: 20px;
+            }
+
+            /* Better mobile grid layout */
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+                .row > [class*="col-"] {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+        }
+
+        /* Extra small mobile counter adjustments */
+        @media (max-width: 480px) {
+            .counter-title {
+                font-size: 1.4rem;
+            }
+
+            .counter-number {
+                font-size: 2.4rem;
+            }
+
+            .counter-container {
+                padding: 20px 10px;
+            }
+
+            .counter-stat-box {
+                min-width: 70px;
+                padding: 8px 6px;
+            }
+
+            .counter-stat-number {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Add this new style for the upcoming badge */
+        .upcoming-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #B22222, #8B0000);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 10px rgba(178, 34, 34, 0.3);
+            z-index: 10;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 10px rgba(178, 34, 34, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 4px 15px rgba(178, 34, 34, 0.6);
+            }
+
+            100% {
+                box-shadow: 0 4px 10px rgba(178, 34, 34, 0.3);
+            }
+        }
+
+        .service-item {
+            position: relative;
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -1695,6 +3128,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Our Services</a>
                         </li>
+                
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About Us</a>
                         </li>
@@ -1723,6 +3157,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Added Counter Section -->
+    <div class="counter-section" id="counter">
+        <div class="counter-container">
+            <h1 class="counter-title">Our Achievement</h1>
+            <p class="counter-subtitle">Giving new life to tyres through professional retreading services since 2018</p>
+
+            <div class="counter-number animate" id="counter-number">0</div>
+            <p class="counter-text">Tyres Retreaded Since 2018</p>
+            <div class="counter-year" id="year-display">2018</div>
+
+            <div class="tyre-lane" aria-hidden="true">
+                <div class="tyre">
+                    <img src="assets/images/tyre2.png" alt="Tyre">
+                </div>
+            </div>
+
+            <p class="counter-info-text">Our professional tyre retreading service extends tyre life, reduces waste, and provides cost-effective solutions for commercial vehicles. Eco-friendly and reliable since 2018.</p>
+        </div>
+    </div>
     <!-- Services Section -->
     <div class="services" id="services">
         <div class="container">
@@ -1741,7 +3195,7 @@
                             <img src="assets/images/jktyre.png" alt="JK tyre">
                         </div>
                         <div class="down-content">
-                            <h4>Retread Plant-JK Tyres</h4>
+                            <h4>JK Authorised Retread Plant</h4>
                             <p>
                                 Our state-of-the-art retread plants feature two chambers that effectively meet market demands and ensure timely
                                 delivery to our valued customers. We are associated with, the leading enterprise JK Tyre & Industries Ltd a
@@ -1878,6 +3332,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="service-item h-100">
+                        <div class="upcoming-badge">Upcoming</div>
                         <div class="service-image">
                             <img src="assets/images/cpk.jpg" alt="CPK">
                         </div>
@@ -1892,189 +3347,193 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Added animated counter section after services -->
-    <!-- Updated counter section with new automotive theme -->
-    <!--<div class="counter-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-5">
-                        <h2 style="color: white;">Our <em style="color: var(--primary-color);">Achievement</em></h2>
-                        <span style="color: rgba(255,255,255,0.9);">Trusted by thousands of customers since 2018</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">-->
-    <!-- Added left side image content -->
-    <!--<div class="col-md-6">
-        <div class="counter-image-content">-->
-    <!--<img src="/placeholder.svg?height=200&width=400" alt="Automotive Excellence">-->
-    <!--<img src="assets/images/automobiles.jpg" alt="EXIDE Batteries">
-
-            <h3>Excellence in Automotive Service</h3>
-            <p>Since 2018, Redstone Automotives has been the trusted choice for premium tyre solutions. Our commitment to quality and customer satisfaction has made us a leader in the automotive industry, serving thousands of satisfied customers with top-tier products and exceptional service.</p>
-        </div>
-    </div>-->
-    <!-- Moved counter to right side -->
-    <!--<div class="col-md-6">
-        <div class="count-area-content">-->
-    <!-- Updated counter element (removed hardcoded value) -->
-    <!--<div class="count-digit" data-target="50000" data-duration="2000"></div>
-                        <div class="count-text">Tyres Sold</div>
-                        <div class="count-year">Since 2018</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- About Section -->
-    <div class="more-info" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h2>About <em>Redstone Automotives</em></h2>
-                        <span>Get to know about our automotive expertise</span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="left-image">
-                        <!--<img src="/placeholder.svg?height=400&width=600" alt="Our Location">-->
-                        <img src="assets/images/about us.jpg" alt="EXIDE Batteries">
-
-                    </div>
-                </div>
-                <div class="col-md-6 align-self-center">
-                    <div class="right-content">
-                        <!-- Updated about section for automotive business -->
-                        <p>
-                            Redstone was established in 2018 in Namakkal with the primary objective of meeting the demand for NTC tires.
-                            Acknowledging the shifting market requirements for retread tires, we relocated to Chennai in 2019.
-                            Following the closure of the MAN INDIA plant, we acquired the entire inventory of spare parts.
-                            Presently, the distribution of spare parts has become our central business focus..<br><br>We pride ourselves on transparent pricing,
-                            quality workmanship, and exceptional customer service.
-                            Every vehicle that enters our site receives the same level of care and attention we would give our own.
-                        </p>
-                        <!--<a href="#" class="filled-button">Read More</a>-->
-                    </div>
-                </div>
-            </div>
-
-            <!-- Added mission and vision section -->
-            <div class="mission-vision">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4><i class="fa fa-bullseye" style="color: var(--primary-color); margin-right: 10px;"></i>Our Mission</h4>
-                            <p>To provide exceptional automotive services with integrity, expertise, and customer-focused solutions. We strive to build lasting relationships through honest communication, quality workmanship, and reliable service that exceeds expectations every time.</p>
+                <!-- Card with upcoming badge -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="upcoming-badge">Upcoming</div>
+                        <div class="service-image">
+                            <img src="assets/images/alignment.png" alt="CPK">
                         </div>
-                        <div class="col-md-6">
-                            <h4><i class="fa fa-eye" style="color: var(--primary-color); margin-right: 10px;"></i>Our Vision</h4>
-                            <p>To be the most trusted automotive service provider in our community, known for innovation, sustainability, and excellence. We envision a future where every customer feels confident and satisfied with their automotive care experience.</p>
+                        <div class="down-content">
+                            <h4>Alignment of Wheel</h4>
+                            <p>
+                                At Redstone, our wheel alignment service ensures your vehicle’s wheels
+                                are precisely adjusted to manufacturer specifications.
+                                Proper alignment not only improves handling and safety, but also extends the life of
+                                your tires and helps you save on fuel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Another card with upcoming badge -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="service-item h-100">
+                        <div class="upcoming-badge">Upcoming</div>
+                        <div class="service-image">
+                            <img src="assets/images/oil.png" alt="CPK">
+                        </div>
+                        <div class="down-content">
+                            <h4>Used oil Recycling Plant</h4>
+                            <p>
+                                We provide sustainable oil recycling solutions that help businesses reduce waste and protect the environment.
+                                Our service ensures used oil is collected, treated, and repurposed efficiently, turning waste into a valuable resource.
+                                We help companies lower their environmental
+                                footprint while complying with industry standards
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Replaced testimonials section with Why Redstone section -->
-    <div class="why-redstone">
-        <div class="container">
+
+        <!-- About Section -->
+        <div class="more-info" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h2>About <em>Redstone Automotives</em></h2>
+                            <span>Get to know about our automotive expertise</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="left-image">
+                            <!--<img src="/placeholder.svg?height=400&width=600" alt="Our Location">-->
+                            <img src="assets/images/about us.jpg" alt="EXIDE Batteries">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <div class="right-content">
+                            <!-- Updated about section for automotive business -->
+                            <p>
+                                Redstone was established in 2018 in Namakkal with the primary objective of meeting the demand for NTC tires.
+                                Acknowledging the shifting market requirements for retread tires, we relocated to Chennai in 2019.
+                                Following the closure of the MAN INDIA plant, we acquired the entire inventory of spare parts.
+                                Presently, the distribution of spare parts has become our central business focus.Now our services extend across the Asia Pacific, SAARC, and
+                                Central Middle East regions, ensuring reliable support and coverage throughout these key markets.
+                                .<br><br>We pride ourselves on transparent pricing,
+                                quality workmanship, and exceptional customer service.
+                                Every vehicle that enters our site receives the same level of care and attention we would give our own.
+                            </p>
+                            <!--<a href="#" class="filled-button">Read More</a>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Added mission and vision section -->
+                <div class="mission-vision">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><i class="fa fa-bullseye" style="color: var(--primary-color); margin-right: 10px;"></i>Our Mission</h4>
+                                <p>To provide exceptional automotive services with integrity, expertise, and customer-focused solutions. We strive to build lasting relationships through honest communication, quality workmanship, and reliable service that exceeds expectations every time.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><i class="fa fa-eye" style="color: var(--primary-color); margin-right: 10px;"></i>Our Vision</h4>
+                                <p>To be the most trusted automotive service provider in our community, known for innovation, sustainability, and excellence. We envision a future where every customer feels confident and satisfied with their automotive care experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Replaced testimonials section with Why Redstone section -->
+        <div class="why-redstone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h2>Why <em>Redstone?</em></h2>
+                            <span>Discover what makes us the preferred choice for automotive services</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fa fa-cogs feature-icon"></i>
+                            <h4>Multiservice Solution</h4>
+                            <p>Complete automotive care under one roof - from routine maintenance to complex repairs.<br>We handle all your vehicle needs with expertise and efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fa fa-group feature-icon"></i>
+                            <h4>Partnerships</h4>
+                            <p>Strong relationships with leading parts suppliers and manufacturers ensure quality components.<br>We work with trusted partners to deliver the best service experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fa fa-leaf feature-icon"></i>
+                            <h4>Sustainability</h4>
+                            <p>Eco-friendly practices and proper disposal of automotive waste protect our environment.<br>We're committed to sustainable automotive solutions for a greener future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Added Our Values section -->
+        <div class="our-values" id="values">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our <em>Values</em></h2>
+                    <span>Built for Performance. Trusted for Life</span>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h2>Why <em>Redstone?</em></h2>
-                        <span>Discover what makes us the preferred choice for automotive services</span>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-shield" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Integrity</h5>
+                        <p>Honest and transparent service in every interaction</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <i class="fa fa-cogs feature-icon"></i>
-                        <h4>Multiservice Solution</h4>
-                        <p>Complete automotive care under one roof - from routine maintenance to complex repairs.<br>We handle all your vehicle needs with expertise and efficiency.</p>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-star" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Excellence</h5>
+                        <p>Delivering superior quality in every service we provide</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <i class="fa fa-group feature-icon"></i>
-                        <h4>Partnerships</h4>
-                        <p>Strong relationships with leading parts suppliers and manufacturers ensure quality components.<br>We work with trusted partners to deliver the best service experience.</p>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-users" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Teamwork</h5>
+                        <p>Collaborative approach to solve complex challenges</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <i class="fa fa-leaf feature-icon"></i>
-                        <h4>Sustainability</h4>
-                        <p>Eco-friendly practices and proper disposal of automotive waste protect our environment.<br>We're committed to sustainable automotive solutions for a greener future.</p>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-lightbulb-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Innovation</h5>
+                        <p>Embracing new technologies and modern solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-heart" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Passion</h5>
+                        <p>Treating every vehicle with attention and respect</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="value-item">
+                        <i class="fa fa-clock-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h5>Reliability</h5>
+                        <p>Consistent service you can depend on every time</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Added Our Values section -->
-    <div class="our-values" id="values">
-        <div class="container">
-            <div class="section-heading">
-                <h2>Our <em>Values</em></h2>
-                <span>Built for Performance. Trusted for Life</span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="value-item">
-                    <i class="fa fa-shield" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                    <h5>Integrity</h5>
-                    <p>Honest and transparent service in every interaction</p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="value-item">
-                    <i class="fa fa-star" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                    <h5>Excellence</h5>
-                    <p>Delivering superior quality in every service we provide</p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="value-item">
-                    <i class="fa fa-users" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                    <h5>Teamwork</h5>
-                    <p>Collaborative approach to solve complex challenges</p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="value-item">
-                    <i class="fa fa-lightbulb-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                    <h5>Innovation</h5>
-                    <p>Embracing new technologies and modern solutions</p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="value-item">
-                    <i class="fa fa-heart" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                    <h5>Passion</h5>
-                    <p>Treating every vehicle with attention and respect</p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="value-item">
-                    <i class="fa fa-clock-o" style="font-size: 50px; color: var(--primary-color); margin-bottom: 20px;"></i>
-                    <h5>Reliability</h5>
-                    <p>Consistent service you can depend on every time</p>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <!-- Added 6 running brand logos below Our Values section -->
-    <div class="brand-logos" style="background: #f8f9fa; padding: 60px 0; overflow: hidden;">
+    <div class="brand-logos" style="background: #f8f9fa; padding: 30px 0; overflow: hidden;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -2087,15 +3546,13 @@
             <div class="logos-slider">
                 <div class="logos-track">
                     <div class="logo-item">
-                        <!--<img src="/placeholder.svg?height=80&width=120&text=BMW" alt="BMW" /> -->
-                        <img src="assets/images/man.png" alt="MAN">
-
+                        <img src="assets/images/man2.png" alt="MAN">
                     </div>
                     <div class="logo-item">
                         <img src="assets/images/exide.png" alt="exide" />
                     </div>
                     <div class="logo-item">
-                        <img src="assets/images/mahindra.png" alt="mahindra" />
+                        <img src="assets/images/mahi logo.png" alt="mahindra" />
                     </div>
                     <div class="logo-item">
                         <img src="assets/images/brakes india.png" alt="tvs-brakes " />
@@ -2106,12 +3563,19 @@
                     <div class="logo-item">
                         <img src="assets/images/jkk.png" alt="jk" />
                     </div>
+                    <div class="logo-item">
+                        <img src="assets/images/maha.png" alt="maha" />
+                    </div>
                     <!-- Duplicate for seamless loop -->
-                    <div <div class="logo-item">
+                    <div
+   <div class="logo-item">
+    <img src="assets/images/man2.png" alt="maha" />
+</div>
+ <div class="logo-item">
     <img src="assets/images/exide.png" alt="exide" />
 </div>
 <div class="logo-item">
-    <img src="assets/images/mahindra.png" alt="mahindra" />
+    <img src="assets/images/mahi logo.png" alt="mahindra" />
 </div>
 <div class="logo-item">
     <img src="assets/images/brakes india.png" alt="tvs-brakes " />
@@ -2122,180 +3586,15 @@
 <div class="logo-item">
     <img src="assets/images/jkk.png" alt="jk" />
 </div>
+                    <div class="logo-item">
+    <img src="assets/images/maha.png" alt="maha" />
+</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Added Testimonials Slider -->
-    <!--<div class="custom-slider" style="background: white;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center">
-                        <h2>Customer <em>Testimonials</em></h2>
-                        <span>What our satisfied customers say about us</span>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-container">
-                <div class="slider-track" id="testimonialsTrack">
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="testimonial-card">
-                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
-                                    <p>"Excellent service! They fixed my car quickly and the price was very reasonable. Highly recommended!"</p>
-                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Sarah Johnson</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card">
-                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
-                                    <p>"Professional team with great expertise. They diagnosed the problem accurately and fixed it perfectly."</p>
-                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Mike Chen</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card">
-                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
-                                    <p>"Best automotive service in town! They always deliver quality work on time. Very satisfied customer."</p>
-                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- David Wilson</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="testimonial-card">
-                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
-                                    <p>"Honest pricing and transparent service. They explained everything clearly and did excellent work."</p>
-                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Lisa Rodriguez</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card">
-                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
-                                    <p>"Fast, reliable, and professional. My go-to place for all automotive needs. Highly recommend!"</p>
-                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- James Brown</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card">
-                                    <div style="color: var(--primary-color); font-size: 30px; margin-bottom: 15px;">★★★★★</div>
-                                    <p>"Outstanding customer service and quality work. They treat every customer with respect and care."</p>
-                                    <h5 style="color: var(--primary-color); margin-top: 20px;">- Emma Davis</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-nav">
-                    <button class="slider-btn" onclick="changeSlide('testimonials', -1)">❮ Previous</button>
-                    <button class="slider-btn" onclick="changeSlide('testimonials', 1)">Next ❯</button>
-                </div>
-                <div class="slider-dots">
-                    <span class="dot active" onclick="currentSlide('testimonials', 1)"></span>
-                    <span class="dot" onclick="currentSlide('testimonials', 2)"></span>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Added Special Offers Slider -->
-    <!--<div class="custom-slider" style="background: #f8f9fa;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center">
-                        <h2>Special <em>Offers</em></h2>
-                        <span>Limited time deals on our premium services</span>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-container">
-                <div class="slider-track" id="offersTrack">
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
-                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
-                                        <h4 style="margin: 0;">20% OFF</h4>
-                                    </div>
-                                    <h5>Oil Change Service</h5>
-                                    <p>Premium oil change with filter replacement. Valid for all vehicle types.</p>
-                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Valid until March 31st</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
-                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
-                                        <h4 style="margin: 0;">FREE</h4>
-                                    </div>
-                                    <h5>Brake Inspection</h5>
-                                    <p>Comprehensive brake system check with any brake service. Safety first!</p>
-                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Limited Time Offer</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
-                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
-                                        <h4 style="margin: 0;">15% OFF</h4>
-                                    </div>
-                                    <h5>AC Service Package</h5>
-                                    <p>Complete AC system service including gas refill and filter replacement.</p>
-                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Summer Special</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
-                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
-                                        <h4 style="margin: 0;">25% OFF</h4>
-                                    </div>
-                                    <h5>Engine Diagnostics</h5>
-                                    <p>Advanced computer diagnostics to identify engine issues quickly and accurately.</p>
-                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">New Customer Special</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
-                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
-                                        <h4 style="margin: 0;">BUY 2 GET 1</h4>
-                                    </div>
-                                    <h5>Tyre Replacement</h5>
-                                    <p>Premium quality tyres with professional installation and balancing service.</p>
-                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Best Value Deal</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="offer-card" style="border: 3px solid var(--primary-color);">
-                                    <div style="background: var(--primary-color); color: white; padding: 10px; margin: -30px -30px 20px -30px; border-radius: 15px 15px 0 0;">
-                                        <h4 style="margin: 0;">30% OFF</h4>
-                                    </div>
-                                    <h5>Full Service Package</h5>
-                                    <p>Comprehensive vehicle service including all major system checks and maintenance.</p>
-                                    <div style="color: var(--primary-color); font-weight: bold; font-size: 18px;">Annual Maintenance</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-nav">
-                    <button class="slider-btn" onclick="changeSlide('offers', -1)">❮ Previous</button>
-                    <button class="slider-btn" onclick="changeSlide('offers', 1)">Next ❯</button>
-                </div>
-                <div class="slider-dots">
-                    <span class="dot active" onclick="currentSlide('offers', 1)"></span>
-                    <span class="dot" onclick="currentSlide('offers', 2)"></span>
-                </div>
-            </div>
-        </div>
-    </div>-->
     <div class="full-divider"></div>
 
     <!-- Fixed navigation link to contact section -->
@@ -2375,25 +3674,18 @@
                     <h4>Useful Links</h4>
                     <ul class="menu-list">
                         <li><a href="#services">Our Services</a></li>
+              
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#values">Our Values</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <!--<div class="col-md-3 footer-item">
-                    <h4>Additional Pages</h4>
-                    <ul class="menu-list">
-                        <li><a href="#">Tire Services</a></li>
-                        <li><a href="#">Battery Solutions</a></li>
-                        <li><a href="#">Spare Parts</a></li>
-                        <li><a href="#">Automotive Recycling</a></li>
-                    </ul>
-                </div>-->
+
                 <!-- Replaced sitemap with Our Location that redirects to maps -->
                 <div class="col-md-6 footer-item last-item">
                     <h4>Our Location</h4>
                     <div class="location-container" style="text-align: center;">
-                        <a href="https://maps.app.goo.gl/aowbAKQ4jRsjpak29?g_st=aw" target="_blank" style="display: inline-block; text-decoration: none; width: 100%;">
+                        <a href="https://maps.app.goo.gl/4LUD5PxyTt5aYrWC9?g_st=aw" target="_blank" style="display: inline-block; text-decoration: none; width: 100%;">
                             <div class="location-card" style="background: #333; padding: 30px 20px; border-radius: 10px; transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent;">
                                 <i class="fa fa-map-marker" style="font-size: 40px; color: var(--primary-color); margin-bottom: 15px; display: block;"></i>
                                 <h5 style="color: white; margin-bottom: 10px; font-size: 16px;">Visit Our Workshop</h5>
@@ -2423,6 +3715,7 @@
         </div>
     </div>
 
+
     <!-- Added WhatsApp widget -->
     <a href="https://wa.me/919600010694?text=Hello%20Redstone%20Automotives,%20I%20would%20like%20to%20inquire%20about%20your%20services"
        class="whatsapp-widget"
@@ -2431,28 +3724,6 @@
         <i class="fa fa-whatsapp whatsapp-icon"></i>
         <span class="whatsapp-text">Chat with us</span>
     </a>
-
-    <!-- Enhanced smooth scroll with delay -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    setTimeout(() => {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }, 100); // 100ms delay
-                }
-            });
-        });
-    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -2464,18 +3735,10 @@
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
+
+    <!-- Custom Script -->
     <script>
-        $(function () {
-            $('#navbarResponsive').singlePageNav({
-                'offset': 100,
-                'filter': ':not(.external)'
-            });
-            $('#navbarResponsive .nav-link').click(function () {
-                $('#navbarResponsive').removeClass('show');
-            });
-        });
-    </script>
-    <script>
+        // Clear input field on focus
         var cleared = [];
         cleared[0] = cleared[1] = cleared[2] = 0;
         function clearField(t) {
@@ -2485,67 +3748,23 @@
                 t.style.color = '#fff';
             }
         }
-        // Enhanced counter animation
-        function animateCounter() {
-            const counterElements = document.querySelectorAll('.count-digit');
-
-            if (!counterElements.length) return;
-
-            const animateCount = (el) => {
-                const target = parseInt(el.getAttribute('data-target')) || 50000;
-                const duration = parseInt(el.getAttribute('data-duration')) || 2000;
-                const startTime = performance.now();
-
-                // Clear any existing content
-                el.textContent = '0';
-
-                const updateCounter = (currentTime) => {
-                    const elapsed = currentTime - startTime;
-                    const progress = Math.min(elapsed / duration, 1);
-
-                    // Ease-out cubic function for smooth animation
-                    const easeOutCubic = 1 - Math.pow(1 - progress, 3);
-                    let currentValue = Math.floor(easeOutCubic * target);
-
-                    // Ensure we don't exceed the target
-                    currentValue = Math.min(currentValue, target);
-
-                    // Format number with commas
-                    el.textContent = currentValue.toLocaleString();
-
-                    if (progress < 1) {
-                        requestAnimationFrame(updateCounter);
-                    }
-                };
-
-                requestAnimationFrame(updateCounter);
-            };
-
-            // Intersection Observer to trigger animation when element is visible
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
-                        animateCount(entry.target);
-                        entry.target.setAttribute('data-animated', 'true');
-                    }
-                });
-            }, {
-                threshold: 0.5,
-                rootMargin: '0px 0px 100px 0px' // Trigger slightly before element is in view
+        $(function () {
+            $('#navbarResponsive').singlePageNav({
+                'offset': 100,
+                'filter': ':not(.external)'
             });
-
-            counterElements.forEach(element => {
-                observer.observe(element);
+            $('#navbarResponsive .nav-link').click(function () {
+                $('#navbarResponsive').removeClass('show');
             });
-        }
-        // Initialize when DOM is loaded
+        });
+
+
         document.addEventListener('DOMContentLoaded', function () {
-            animateCounter();
-
-            // Smooth scrolling for anchor links
+            // Smooth scroll with delay
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
+
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
 
@@ -2556,25 +3775,88 @@
                                 behavior: 'smooth',
                                 block: 'start'
                             });
-                        }, 100);
+                        }, 100); // 100ms delay
                     }
                 });
             });
 
+            // Counter logic
+            const counterElement = document.getElementById('counter-number');
+            const yearElement = document.getElementById('year-display');
+
+            if (counterElement && yearElement) {
+                const target = 50000;
+                const duration = 2800; // Counter runs for 4 seconds
+                const frameRate = 60;
+                const totalFrames = Math.floor(duration / (1000 / frameRate));
+                const increment = target / totalFrames;
+
+                const startYear = 2018;
+                const currentYear = new Date().getFullYear();
+                const yearIncrement = (currentYear - startYear) / totalFrames;
+
+                let currentCount = 0;
+                let currentYearDisplay = startYear;
+                let frame = 0;
+
+                function resetCounterValues() {
+                    currentCount = 0;
+                    currentYearDisplay = startYear;
+                    frame = 0;
+                    counterElement.textContent = '0';
+                    yearElement.textContent = startYear;
+                }
+
+                function updateCounter() {
+                    if (frame < totalFrames) {
+                        currentCount += increment;
+                        currentYearDisplay += yearIncrement;
+
+                        counterElement.textContent = Math.floor(currentCount).toLocaleString();
+                        yearElement.textContent = Math.floor(currentYearDisplay);
+
+                        frame++;
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counterElement.textContent = target.toLocaleString();
+                        yearElement.textContent = currentYear;
+                        counterElement.style.filter = 'drop-shadow(0 0 8px rgba(120, 0, 0, 0.9))';
+                    }
+                }
+
+                function startCounter() {
+                    resetCounterValues();
+                    updateCounter();
+                }
+
+                // Automatically restart every 5 seconds (5000ms)
+                setInterval(startCounter, 5000);
+
+                // Optionally, start immediately on page load
+                startCounter();
+
+                // Optional: Restart on click
+                counterElement.addEventListener('click', startCounter);
+            }
+
+
+            // Attempt to autoplay video
             const video = document.querySelector('video');
-            video.play().catch(error => {
-                console.log('Autoplay failed:', error);
-            });
-        }
+            if (video) {
+                video.play().catch(error => {
+                    console.log('Autoplay failed:', error);
+                });
+            }
 
-                                // Mobile menu toggle
-                                $('#navbarResponsive .nav-link').click(function () {
-            $('#navbarResponsive').removeClass('show');
+            // Mobile nav collapse on link click
+            if (window.jQuery) {
+                $('#navbarResponsive .nav-link').click(function () {
+                    $('#navbarResponsive').removeClass('show');
+                });
+            }
         });
-                            });
 
-        // Remove all slider-related code since those sections are commented out
-        // This prevents the "Cannot read properties of null" error
     </script>
+
 </body>
 </html>
