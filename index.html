@@ -3114,8 +3114,7 @@
 
             .certificate-card:hover {
                 transform: translateY(-8px);
-                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6), 0 0 35px rgba(200, 0, 0, 0.2)
-;
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6), 0 0 35px rgba(200, 0, 0, 0.2);
             }
 
             /* IMAGE FIT */
@@ -3147,6 +3146,57 @@
             flex-direction: column;
             align-items: center;
         }
+
+/*        Media Gallery*/
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+/*            background: #e8e8e8;*/
+        }
+
+        .media-section {
+            padding: 20px; /* reduced padding */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .media-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        /* RESPONSIVE GRID */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .media-card {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 5px 16px rgba(0,0,0,0.18);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+            .media-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6), 0 0 35px rgba(200, 0, 0, 0.2);
+            }
+    
+            .media-card img,
+            .media-card video {
+                width: 100%; /* Full width */
+                height: auto; /* Maintain original height */
+                object-fit: contain; /* no cropping */
+            }
+
 
     </style>
 </head>
@@ -3267,7 +3317,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="service-item h-100">
                         <div class="service-image">
-                            <img src="assets/images/jktyre.png" alt="JK tyre">
+                            <img src="assets/images/jktread.jpg" alt="JK tyre">
                         </div>
                         <div class="down-content">
                             <h4>JK Authorised Retread Plant</h4>
@@ -3357,7 +3407,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="service-item h-100">
                         <div class="service-image">
-                            <img src="assets/images/ralsoncard.jpeg" alt="ralson">
+                            <img src="assets/images/ralsoncard.jpg" alt="ralson">
                         </div>
                         <div class="down-content">
                             <h4>Ralson - Authorized Distributor(TN)</h4>
@@ -3635,7 +3685,59 @@
         </div>
     </div>
 
-    <!-- Added 6 running brand logos below Our Values section -->
+    <section class="media-section">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading text-center mb-5">
+                    <h2>Our <em>Media Gallery</em></h2>
+                    <span>Real experiences. Real stories. Real moments.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="media-grid">
+
+            <div class="media-card">
+                <img src="assets/images/m1.jpeg" alt="">
+            </div>
+
+            <div class="media-card">
+                <img src="assets/images/m2.jpeg" alt="">
+            </div>
+
+            <div class="media-card">
+                <img src="assets/images/m3.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="our-recogniation" id="values">
+        <div class="certificate-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h2>Our <em>Recognitions</em></h2>
+                    <span>Driving Standards. Delivering Trust.</span>
+                </div>
+            </div>
+
+            <div class="certificate-gallery">
+                <div class="certificate-card">
+                    <img src="assets/images/Certificate1.jpeg" alt="Certificate 1">
+                </div>
+
+                <div class="certificate-card">
+                    <img src="assets/images/ralson cert.jpeg" alt="Certificate 2">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+        <!-- Added 6 running brand logos below Our Values section -->
     <div class="brand-logos" style="background: #f8f9fa; padding: 30px 0; overflow: hidden;">
         <div class="container">
             <div class="row">
@@ -3699,320 +3801,275 @@
     <img src="assets/images/ralsonicon.png" alt="ralson" />
 </div>
                     </div>
+                    <div class="full-divider"></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="full-divider"></div>
+</html>
 
-    <!--<div class="our-values" id="values">
-        <div class="container">
-            <div class="section-heading">
-                <h2>Our <em>Recognitions</em></h2>
-                <span>Built for Performance. Trusted for Life</span>
-            </div>
-        </div>
 
+<!-- Fixed navigation link to contact section -->
+<section class="simple-contact-section section-padding" id="contact">
+    <div class="container">
         <div class="row">
-            <div class="gallery">
-
-                <div class="image-card">
-                    <img src="assets/images/Certificate1.jpeg" alt="Certificate 1">
-                </div>
-
-                <div class="image-card">
-                    <img src="assets/images/ralson cert.jpeg" alt="Certificate 2">
-                </div>
-
-            </div>
-        </div>
-    </div>-->
-    <div class="our-recogniation" id="values">
-        <div class="certificate-section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <h2>Our <em>Recognitions</em></h2>
-                    <span>Driving Standards. Delivering Trust.</span>
+            <div class="col-md-12">
+                <div class="section-heading text-center mb-5">
+                    <h2>Get in <em style="color: var(--primary-color);">Touch</em></h2>
+                    <span>Contact us for all your automotive needs</span>
                 </div>
             </div>
-
-            <div class="certificate-gallery">
-                <div class="certificate-card">
-                    <img src="assets/images/Certificate1.jpeg" alt="Certificate 1">
-                </div>
-
-                <div class="certificate-card">
-                    <img src="assets/images/ralson cert.jpeg" alt="Certificate 2">
-                </div>
-            </div>
-
-
         </div>
-        </div>
-
-
-        <!-- Fixed navigation link to contact section -->
-        <section class="simple-contact-section section-padding" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading text-center mb-5">
-                            <h2>Get in <em style="color: var(--primary-color);">Touch</em></h2>
-                            <span>Contact us for all your automotive needs</span>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="simple-contact-form">
+                    <div class="contact-item">
+                        <i class="fa fa-phone"></i>
+                        <div class="contact-details">
+                            <strong>Phone:</strong>
+                            <span>+91 98402 51694 <br>+91 98405 32694</span>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="simple-contact-form">
-                            <div class="contact-item">
-                                <i class="fa fa-phone"></i>
-                                <div class="contact-details">
-                                    <strong>Phone:</strong>
-                                    <span>+91 98402 51694 <br>+91 98405 32694</span>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fa fa-envelope"></i>
-                                <div class="contact-details">
-                                    <strong>Email:</strong>
-                                    <a href="mailto:rsal.enquiry@redstoneauto.in">rsal.enquiry@redstoneauto.in</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fa fa-map-marker"></i>
-                                <div class="contact-details">
-                                    <strong>Address:</strong>
-                                    <span>
-                                        Redstone Automotive Solutions<br>
-                                        5/231, Padur Main Road,<br> Irulapalayam
-                                        Kuthambakkam(PO),<br> Poonamallee,
-                                        Chennai - 600 124, Tamil Nadu.
+                    <div class="contact-item">
+                        <i class="fa fa-envelope"></i>
+                        <div class="contact-details">
+                            <strong>Email:</strong>
+                            <a href="mailto:rsal.enquiry@redstoneauto.in">rsal.enquiry@redstoneauto.in</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="contact-details">
+                            <strong>Address:</strong>
+                            <span>
+                                Redstone Automotive Solutions<br>
+                                5/231, Padur Main Road,<br> Irulapalayam
+                                Kuthambakkam(PO),<br> Poonamallee,
+                                Chennai - 600 124, Tamil Nadu.
 
-                                    </span>
-                                </div>
-                                <i class="fa fa-map-marker"></i>
-                                <div class="contact-details">
-                                    <span>
+                            </span>
+                        </div>
+                        <i class="fa fa-map-marker"></i>
+                        <div class="contact-details">
+                            <span>
 
-                                        <div style="font-weight: 500">Branch Office:<br></div>
-                                        Karpagam Garden, Pattanur,
-                                        Pondy – Tindivanam Road,<br>
-                                        Auroville P.O, Villupuram – 605 101
-                                    </span>
+                                <div style="font-weight: 500">Branch Office:<br></div>
+                                Karpagam Garden, Pattanur,
+                                Pondy – Tindivanam Road,<br>
+                                Auroville P.O, Villupuram – 605 101
+                            </span>
 
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!-- Footer Starts Here -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 footer-item">
-                        <!-- Updated footer content for Redstone Automotives -->
-                        <h4> <em style="color: var(--primary-color);">Redstone </em>Automotives</h4>
-                        <p>Your trusted partner for comprehensive automotive solutions. We provide quality services with integrity, expertise, and customer satisfaction as our top priorities.</p>
-                        <ul class="social-icons">
-                            <li><a href="https://www.facebook.com/profile.php?id=61579105573236"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/redstone_automotives_llp?igsh=YzljYTk1ODg3Zg=="><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/redstoneautomotivesllp/?viewAsMember=true"><i class="fa fa-linkedin"></i></a></li>
-                            <!--<li><a href="#"><i class="fa fa-behance"></i></a></li>-->
-                        </ul>
-                    </div>
-                    <div class="col-md-3 footer-item">
-                        <h4>Useful Links</h4>
-                        <ul class="menu-list">
-                            <li><a href="#services">Our Services</a></li>
-
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#values">Our Values</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Replaced sitemap with Our Location that redirects to maps -->
-                    <div class="col-md-6 footer-item last-item">
-                        <h4>Our Location</h4>
-                        <div class="location-container" style="text-align: center;">
-                            <a href="https://maps.app.goo.gl/4LUD5PxyTt5aYrWC9?g_st=aw" target="_blank" style="display: inline-block; text-decoration: none; width: 100%;">
-                                <div class="location-card" style="background: #333; padding: 30px 20px; border-radius: 10px; transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent;">
-                                    <i class="fa fa-map-marker" style="font-size: 40px; color: var(--primary-color); margin-bottom: 15px; display: block;"></i>
-                                    <h5 style="color: white; margin-bottom: 10px; font-size: 16px;">Visit Our Workshop</h5>
-                                    <p style="color: #ccc; margin: 0; font-size: 14px; line-height: 1.4;">Click to view our location<br>on Google Maps</p>
-                                    <div style="margin-top: 15px; padding: 8px 16px; background: var(--primary-color); border-radius: 5px; display: inline-block;">
-                                        <span style="color: white; font-size: 12px; font-weight: 500;">GET DIRECTIONS</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<!-- Footer Starts Here -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-item">
+                <!-- Updated footer content for Redstone Automotives -->
+                <h4> <em style="color: var(--primary-color);">Redstone </em>Automotives</h4>
+                <p>Your trusted partner for comprehensive automotive solutions. We provide quality services with integrity, expertise, and customer satisfaction as our top priorities.</p>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/profile.php?id=61579105573236"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/redstone_automotives_llp?igsh=YzljYTk1ODg3Zg=="><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/redstoneautomotivesllp/?viewAsMember=true"><i class="fa fa-linkedin"></i></a></li>
+                    <!--<li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+                </ul>
             </div>
-        </footer>
+            <div class="col-md-3 footer-item">
+                <h4>Useful Links</h4>
+                <ul class="menu-list">
+                    <li><a href="#services">Our Services</a></li>
 
-        <div class="sub-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            <!-- Updated copyright for Redstone Automotives -->
-                            Copyright &copy; 2025 Redstone Automotives LLP
-                            <!--- Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a>-->
-                        </p>
-                    </div>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#values">Our Values</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Replaced sitemap with Our Location that redirects to maps -->
+            <div class="col-md-6 footer-item last-item">
+                <h4>Our Location</h4>
+                <div class="location-container" style="text-align: center;">
+                    <a href="https://maps.app.goo.gl/4LUD5PxyTt5aYrWC9?g_st=aw" target="_blank" style="display: inline-block; text-decoration: none; width: 100%;">
+                        <div class="location-card" style="background: #333; padding: 30px 20px; border-radius: 10px; transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent;">
+                            <i class="fa fa-map-marker" style="font-size: 40px; color: var(--primary-color); margin-bottom: 15px; display: block;"></i>
+                            <h5 style="color: white; margin-bottom: 10px; font-size: 16px;">Visit Our Workshop</h5>
+                            <p style="color: #ccc; margin: 0; font-size: 14px; line-height: 1.4;">Click to view our location<br>on Google Maps</p>
+                            <div style="margin-top: 15px; padding: 8px 16px; background: var(--primary-color); border-radius: 5px; display: inline-block;">
+                                <span style="color: white; font-size: 12px; font-weight: 500;">GET DIRECTIONS</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+</footer>
+
+<div class="sub-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <!-- Updated copyright for Redstone Automotives -->
+                    Copyright &copy; 2025 Redstone Automotives LLP
+                    <!--- Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a>-->
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-        <!-- Added WhatsApp widget -->
-        <a href="https://wa.me/919600010694?text=Hello%20Redstone%20Automotives,%20I%20would%20like%20to%20inquire%20about%20your%20services"
-           class="whatsapp-widget"
-           target="_blank"
-           rel="noopener noreferrer">
-            <i class="fa fa-whatsapp whatsapp-icon"></i>
-            <span class="whatsapp-text">Chat with us</span>
-        </a>
+<!-- Added WhatsApp widget -->
+<a href="https://wa.me/919600010694?text=Hello%20Redstone%20Automotives,%20I%20would%20like%20to%20inquire%20about%20your%20services"
+   class="whatsapp-widget"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fa fa-whatsapp whatsapp-icon"></i>
+    <span class="whatsapp-text">Chat with us</span>
+</a>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Additional Scripts -->
-        <script src="assets/js/jquery.singlePageNav.min.js"></script>
-        <script src="assets/js/custom.js"></script>
-        <script src="assets/js/owl.js"></script>
-        <script src="assets/js/slick.js"></script>
-        <script src="assets/js/accordions.js"></script>
+<!-- Additional Scripts -->
+<script src="assets/js/jquery.singlePageNav.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/accordions.js"></script>
 
-        <!-- Custom Script -->
-        <script>
-            // Clear input field on focus
-            var cleared = [];
-            cleared[0] = cleared[1] = cleared[2] = 0;
-            function clearField(t) {
-                if (!cleared[t.id]) {
-                    cleared[t.id] = 1;
-                    t.value = '';
-                    t.style.color = '#fff';
+<!-- Custom Script -->
+<script>
+    // Clear input field on focus
+    var cleared = [];
+    cleared[0] = cleared[1] = cleared[2] = 0;
+    function clearField(t) {
+        if (!cleared[t.id]) {
+            cleared[t.id] = 1;
+            t.value = '';
+            t.style.color = '#fff';
+        }
+    }
+    $(function () {
+        $('#navbarResponsive').singlePageNav({
+            'offset': 100,
+            'filter': ':not(.external)'
+        });
+        $('#navbarResponsive .nav-link').click(function () {
+            $('#navbarResponsive').removeClass('show');
+        });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Smooth scroll with delay
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }, 100); // 100ms delay
+                }
+            });
+        });
+
+        // Counter logic
+        const counterElement = document.getElementById('counter-number');
+        const yearElement = document.getElementById('year-display');
+
+        if (counterElement && yearElement) {
+            const target = 50000;
+            const duration = 2800; // Counter runs for 4 seconds
+            const frameRate = 60;
+            const totalFrames = Math.floor(duration / (1000 / frameRate));
+            const increment = target / totalFrames;
+
+            const startYear = 2018;
+            const currentYear = new Date().getFullYear();
+            const yearIncrement = (currentYear - startYear) / totalFrames;
+
+            let currentCount = 0;
+            let currentYearDisplay = startYear;
+            let frame = 0;
+
+            function resetCounterValues() {
+                currentCount = 0;
+                currentYearDisplay = startYear;
+                frame = 0;
+                counterElement.textContent = '0';
+                yearElement.textContent = startYear;
+            }
+
+            function updateCounter() {
+                if (frame < totalFrames) {
+                    currentCount += increment;
+                    currentYearDisplay += yearIncrement;
+
+                    counterElement.textContent = Math.floor(currentCount).toLocaleString();
+                    yearElement.textContent = Math.floor(currentYearDisplay);
+
+                    frame++;
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counterElement.textContent = target.toLocaleString();
+                    yearElement.textContent = currentYear;
+                    counterElement.style.filter = 'drop-shadow(0 0 8px rgba(120, 0, 0, 0.9))';
                 }
             }
-            $(function () {
-                $('#navbarResponsive').singlePageNav({
-                    'offset': 100,
-                    'filter': ':not(.external)'
-                });
-                $('#navbarResponsive .nav-link').click(function () {
-                    $('#navbarResponsive').removeClass('show');
-                });
+
+            function startCounter() {
+                resetCounterValues();
+                updateCounter();
+            }
+
+            // Automatically restart every 5 seconds (5000ms)
+            setInterval(startCounter, 5000);
+
+            // Optionally, start immediately on page load
+            startCounter();
+
+            // Optional: Restart on click
+            counterElement.addEventListener('click', startCounter);
+        }
+
+
+        // Attempt to autoplay video
+        const video = document.querySelector('video');
+        if (video) {
+            video.play().catch(error => {
+                console.log('Autoplay failed:', error);
             });
+        }
 
-
-            document.addEventListener('DOMContentLoaded', function () {
-                // Smooth scroll with delay
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-
-                        const targetId = this.getAttribute('href');
-                        if (targetId === '#') return;
-
-                        const targetElement = document.querySelector(targetId);
-                        if (targetElement) {
-                            setTimeout(() => {
-                                targetElement.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'start'
-                                });
-                            }, 100); // 100ms delay
-                        }
-                    });
-                });
-
-                // Counter logic
-                const counterElement = document.getElementById('counter-number');
-                const yearElement = document.getElementById('year-display');
-
-                if (counterElement && yearElement) {
-                    const target = 50000;
-                    const duration = 2800; // Counter runs for 4 seconds
-                    const frameRate = 60;
-                    const totalFrames = Math.floor(duration / (1000 / frameRate));
-                    const increment = target / totalFrames;
-
-                    const startYear = 2018;
-                    const currentYear = new Date().getFullYear();
-                    const yearIncrement = (currentYear - startYear) / totalFrames;
-
-                    let currentCount = 0;
-                    let currentYearDisplay = startYear;
-                    let frame = 0;
-
-                    function resetCounterValues() {
-                        currentCount = 0;
-                        currentYearDisplay = startYear;
-                        frame = 0;
-                        counterElement.textContent = '0';
-                        yearElement.textContent = startYear;
-                    }
-
-                    function updateCounter() {
-                        if (frame < totalFrames) {
-                            currentCount += increment;
-                            currentYearDisplay += yearIncrement;
-
-                            counterElement.textContent = Math.floor(currentCount).toLocaleString();
-                            yearElement.textContent = Math.floor(currentYearDisplay);
-
-                            frame++;
-                            requestAnimationFrame(updateCounter);
-                        } else {
-                            counterElement.textContent = target.toLocaleString();
-                            yearElement.textContent = currentYear;
-                            counterElement.style.filter = 'drop-shadow(0 0 8px rgba(120, 0, 0, 0.9))';
-                        }
-                    }
-
-                    function startCounter() {
-                        resetCounterValues();
-                        updateCounter();
-                    }
-
-                    // Automatically restart every 5 seconds (5000ms)
-                    setInterval(startCounter, 5000);
-
-                    // Optionally, start immediately on page load
-                    startCounter();
-
-                    // Optional: Restart on click
-                    counterElement.addEventListener('click', startCounter);
-                }
-
-
-                // Attempt to autoplay video
-                const video = document.querySelector('video');
-                if (video) {
-                    video.play().catch(error => {
-                        console.log('Autoplay failed:', error);
-                    });
-                }
-
-                // Mobile nav collapse on link click
-                if (window.jQuery) {
-                    $('#navbarResponsive .nav-link').click(function () {
-                        $('#navbarResponsive').removeClass('show');
-                    });
-                }
+        // Mobile nav collapse on link click
+        if (window.jQuery) {
+            $('#navbarResponsive .nav-link').click(function () {
+                $('#navbarResponsive').removeClass('show');
             });
+        }
+    });
 
-        </script>
+</script>
 
 </body>
 </html>
